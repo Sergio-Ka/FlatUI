@@ -2,26 +2,44 @@
   border: none;
   cursor: pointer;
   color: #fff;
-  padding: 15px 40px;
-  border-radius: 2px;
-  font-size: 22px;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  border-radius: 4px;
+  width: 118px;
+  height: 32px;
+  font-weight: bold;
+}
+.std-button_inactive-green {
+  color: #4eb7a8;
+  background: #fff;
+  border: 1px solid #4eb7a8;
+  border-bottom: 4px solid #4eb7a8;
+}
+.std-button_inactive-red {
+  color: #e75735;
+  background: #fff;
+  border: 1px solid #e75735;
+  border-bottom: 4px solid #e75735;
+}
+.std-buttons__std-button {
+  margin: 12px;
 }
 .std-button_color_green {
   background: #4eb7a8;
+  border-bottom: 4px solid #28a290;
 }
 .std-button_color_red {
   background: #e75735;
+  border-bottom: 4px solid #bf3f1f;
 }
 .std-button_size_small {
   width: 78px;
   height: 22px;
 }
-button {
+.std-button_ripple-eff {
   position: relative;
   overflow: hidden;
+  border: none;
 }
-button:after {
+.std-button_ripple-eff:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -34,7 +52,7 @@ button:after {
   transform: scale(1, 1) translate(-50%);
   transform-origin: 50% 50%;
 }
-button:focus:not(:active)::after {
+.std-button_ripple-eff:focus:not(:active)::after {
   animation: ripple 1s ease-out;
 }
 @-moz-keyframes ripple {
@@ -93,6 +111,34 @@ button:focus:not(:active)::after {
     transform: scale(40, 40);
   }
 }
+.arr-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #008000;
+  font-size: 23px;
+  font-weight: bold;
+  border: none;
+}
+.arr-buttons__arr-button:first-child {
+  margin-left: 24px;
+}
+.arr-buttons__arr-button {
+  margin: 12px;
+}
+.arr-button_color_green {
+  background: #4eb7a8;
+  color: #fff;
+}
+.arr-button_color_gray {
+  background: #e5e5e5;
+  color: #fff;
+}
+.arr-button_color_white {
+  background: #fff;
+  color: #4eb7a8;
+  border: 4px solid #4eb7a8;
+}
 /* @import 'blocks/common/header-of-block/header-of-block.styl'*/
 @font-face {
   font-family: 'Conv_Lato-Black';
@@ -100,6 +146,10 @@ button:focus:not(:active)::after {
   src: local('\263A'), url(public/fonts/Lato-Black.woff) format('woff'), url(public/fonts/Lato-Black.ttf) format('truetype'), url(public/fonts/Lato-Black.svg) format('svg');
   font-weight: normal;
   font-style: normal;
+}
+h1 {
+  font-size: 1rem;
+  text-align: center;
 }
 .main {
   font-size: 18px;
@@ -109,10 +159,12 @@ button:focus:not(:active)::after {
   max-width: 594px;
   min-height: 3176px;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 .page {
   font-family: 'Conv_Lato-Black', Sans-Serif;
   background: #fff;
+  color: #4f4f4f;
 }
 .column-1 {
   float: left;
