@@ -139,6 +139,19 @@
   color: #4eb7a8;
   border: 4px solid #4eb7a8;
 }
+.location__legend {
+  background: #e75735;
+  color: #fff;
+  height: 68px;
+}
+.location_invite,
+.location_adress {
+  float: left;
+  padding-left: 20px;
+}
+.location_icon {
+  float: right;
+}
 /* @import 'blocks/common/header-of-block/header-of-block.styl'*/
 @font-face {
   font-family: 'Conv_Lato-Black';
