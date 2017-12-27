@@ -139,6 +139,22 @@
   color: #4eb7a8;
   border: 4px solid #4eb7a8;
 }
+.perc-pie-chart-graphics {
+  min-width: 594px;
+}
+.sliders {
+  padding: 10px 0;
+}
+.sliders_right {
+  float: right;
+  width: 260px;
+  padding: 40px 0 40px 37px;
+}
+.sliders_left {
+  float: left;
+  width: 260px;
+  padding: 40px 37px 40px 0;
+}
 .ui-slider {
   display: flex;
   position: relative;
