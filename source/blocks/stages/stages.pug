@@ -1,2 +1,16 @@
 div(class="stages")
-    h1 STAGES
+    +header-of-block("STAGES")
+    svg(class="stages-graphics")
+        - var cor_y = 22, cor_t_y = cor_y + 5;
+        line(x1="8", y1=cor_y, x2="586", y2=cor_y, fill="none", stroke-width="5", stroke="#E5E5E5")
+        line(x1="8", y1=cor_y, x2="297", y2=cor_y, fill="none", stroke-width="5", stroke="#E75735")
+        circle(r="14", cx="14", cy=cor_y, fill="#E75735")
+        text(x="9", y=cor_t_y, fill="#FFFFFF") 1
+        circle(r="14", cx="25%", cy=cor_y, fill="#E75735")
+        text(x="24.16%", y=cor_t_y, fill="#FFFFFF") 2
+        circle(r="14", cx="50%", cy=cor_y, fill="#E75735")
+        text(x="49.16%", y=cor_t_y, fill="#FFFFFF") 3
+        circle(r="14", cx="75%", cy=cor_y, fill="#E5E5E5")
+        text(x="74.16%", y=cor_t_y, fill="#888888") 4
+        circle(r="14", cx="580", cy=cor_y, fill="#E5E5E5")
+        text(x="575", y=cor_t_y, fill="#888888") 5
