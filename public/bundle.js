@@ -71,8 +71,15 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_styl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png__);
 
-__webpack_require__(2);
+
+
+__webpack_require__(4);
+__webpack_require__(5);
 
 /***/ }),
 /* 1 */
@@ -82,6 +89,18 @@ __webpack_require__(2);
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "public/images/icon-1.png";
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "public/images/icon-2.png";
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 $("#slider1").slider({ // вид первого слайдера и настройки
@@ -118,6 +137,16 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
     if (index % 2 == 0)
     $(handle).addClass('even-range-min');
     else $(handle).addClass('odd-range-min');
+});
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+$("#datepicker").datepicker({
+    dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+    firstDay: 1,
+    showButtonPanel: true
 });
 
 /***/ })

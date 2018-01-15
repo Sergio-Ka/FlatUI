@@ -32,7 +32,7 @@ module.exports = {
         },
         {
             test: /\.(svg|ttf|otf|eot|woff)$/,
-            loader: 'file-loader?name=public/fonts/[name].[ext]'
+            loader: 'file-loader?name=fonts/[name].[ext]'
         },
         {
             test: /\.png$/,

@@ -1,16 +1,23 @@
 @font-face {
-  font-family: 'Conv_Lato-Black';
-  src: url(public/fonts/Lato-Black.eot);
-  src: local('\263A'), url(public/fonts/Lato-Black.woff) format('woff'), url(public/fonts/Lato-Black.ttf) format('truetype'), url(public/fonts/Lato-Black.svg) format('svg');
+  font-family: 'Lato';
+  src: url(fonts/Lato-Black.eot);
+  src: local('\263A'), url(fonts/Lato-Black.woff) format('woff'), url(fonts/Lato-Black.ttf) format('truetype'), url(fonts/Lato-Black.svg) format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/lato-light.eot);
+  src: local('\263A'), url(fonts/lato-light.woff) format('woff'), url(fonts/lato-light.ttf) format('truetype'), url(fonts/lato-light.svg) format('svg');
   font-weight: normal;
   font-style: normal;
 }
 .header-of-block {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   color: #4f4f4f;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.02rem;
 }
 .std-buttons {
   min-height: 275px;
@@ -182,10 +189,7 @@
   padding: 13px 0 0 2px;
 }
 .perc-text {
-  font-family: 'Trebuchet MS', Sans-Serif;
-  font-weight: 100;
-  stroke: #fff;
-  stroke-width: 1px;
+  font-weight: normal;
   font-size: 2.4rem;
   fill: #9d9d9d;
 }
@@ -195,7 +199,7 @@
 .sliders_right {
   float: right;
   width: 260px;
-  padding: 33px 5px 40px 32px;
+  padding: 33px 5px 15px 32px;
 }
 .sliders_left {
   float: left;
@@ -360,101 +364,34 @@
   height: 69px;
   margin-top: -5px;
 }
-.location_invite {
+.location__invite {
   float: left;
   padding-top: 15px;
   padding-left: 29px;
   width: 135px;
   font-size: 1.6rem;
 }
-.location_adress {
+.location__adress {
   float: left;
   padding-top: 19px;
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 1.2px;
 }
-.location_icon {
+.location__icon {
   float: right;
+  padding: 21px 26px 0 0;
+}
+.icon {
+  margin-left: 23px;
 }
 .calendar {
   float: left;
-}
-.ui-datepicker.ui-datepicker-multi {
-  width: auto;
-}
-.ui-datepicker-multi .ui-datepicker-group {
-  float: left;
-}
-.ui-datepicker-multi .ui-datepicker-group table {
-  width: 95%;
-  margin: 0 auto 0.4em;
-}
-.ui-datepicker-multi-2 .ui-datepicker-group {
-  width: 50%;
-}
-.ui-datepicker-multi-3 .ui-datepicker-group {
-  width: 33.3%;
-}
-.ui-datepicker-multi-4 .ui-datepicker-group {
-  width: 25%;
-}
-.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
-.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
-  border-left-width: 0;
-}
-.ui-datepicker-multi .ui-datepicker-buttonpane {
-  clear: left;
-}
-.ui-datepicker-row-break {
-  clear: both;
-  width: 100%;
-  font-size: 0;
-}
-.ui-datepicker-rtl {
-  direction: rtl;
-}
-.ui-datepicker-rtl .ui-datepicker-prev {
-  right: 2px;
-  left: auto;
-}
-.ui-datepicker-rtl .ui-datepicker-next {
-  left: 2px;
-  right: auto;
-}
-.ui-datepicker-rtl .ui-datepicker-prev:hover {
-  right: 1px;
-  left: auto;
-}
-.ui-datepicker-rtl .ui-datepicker-next:hover {
-  left: 1px;
-  right: auto;
-}
-.ui-datepicker-rtl .ui-datepicker-buttonpane {
-  clear: right;
-}
-.ui-datepicker-rtl .ui-datepicker-buttonpane button {
-  float: left;
-}
-.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
-.ui-datepicker-rtl .ui-datepicker-group {
-  float: right;
-}
-.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
-.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
-  border-right-width: 0;
-  border-left-width: 1px;
-}
-.ui-datepicker .ui-icon {
-  display: block;
-  text-indent: -99999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  left: 0.5em;
-  top: 0.3em;
+  min-width: 278px;
 }
 .messaging {
   float: right;
+  min-width: 288px;
 }
 .video {
   min-height: 490px;
@@ -477,7 +414,7 @@
 .page {
   background: #fff;
   color: #4f4f4f;
-  font-family: 'Conv_Lato-Black', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
 }
 .page__positioner-3 {
   min-height: 528px;
