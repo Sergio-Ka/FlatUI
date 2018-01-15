@@ -79,7 +79,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 __webpack_require__(4);
-__webpack_require__(5);
 
 /***/ }),
 /* 1 */
@@ -137,16 +136,6 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
     if (index % 2 == 0)
     $(handle).addClass('even-range-min');
     else $(handle).addClass('odd-range-min');
-});
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-$("#datepicker").datepicker({
-    dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
-    firstDay: 1,
-    showButtonPanel: true
 });
 
 /***/ })

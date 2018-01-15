@@ -1,4 +1,6 @@
 div(class="calendar")
     +header-of-block("CALENDAR")
+    div(class="calendar__spacer")
+    input(class="ui-datepicker-digit")
     div(id="datepicker")
-    script $( "#datepicker" ).datepicker({inline: true});
+    script $( "#datepicker" ).datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".ui-datepicker-digit", altFormat: "dd", showButtonPanel: true});
