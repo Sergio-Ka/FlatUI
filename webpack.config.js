@@ -10,12 +10,13 @@ module.exports = {
     }*/,
 
     output: {
-        filename: 'public/bundle.js'
+        path: __dirname + '/public',
+        filename: 'bundle.js'
     },
 
     plugins: [
-        new ExtractTextPlugin('public/style.css'),
-        new HtmlWebpackPlugin({template: 'source/index.pug'})
+        new ExtractTextPlugin('style.css'),
+        new HtmlWebpackPlugin({template: 'source/index.pug', filename: '../index.html'})
     ],
 
     module: {
@@ -36,7 +37,7 @@ module.exports = {
         },
         {
             test: /\.png$/,
-            loader: 'file-loader?name=public/images/[name].[ext]'
+            loader: 'file-loader?name=images/[name].[ext]'
         }
         ]
 
