@@ -82,6 +82,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 __webpack_require__(5);
+__webpack_require__(18);
 
 /***/ }),
 /* 1 */
@@ -146,6 +147,24 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
     $(handle).addClass('even-range-min');
     else $(handle).addClass('odd-range-min');
 });
+
+/***/ }),
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports) {
+
+$("#selectmenu").selectmenu({ style: "dropdown", width:140 });
 
 /***/ })
 /******/ ]);
