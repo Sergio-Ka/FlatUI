@@ -71,18 +71,18 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_styl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__blocks_location_images_icon_1_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__blocks_location_images_icon_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_messaging_images_photo_SB_png__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_messaging_images_photo_SB_png__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_messaging_images_photo_SB_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blocks_messaging_images_photo_SB_png__);
 
 
 
 
 __webpack_require__(5);
-__webpack_require__(18);
+__webpack_require__(6);
 
 /***/ }),
 /* 1 */
@@ -94,19 +94,19 @@ __webpack_require__(18);
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/photo_SB.png";
+module.exports = __webpack_require__.p + "images/icon-1.png";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-1.png";
+module.exports = __webpack_require__.p + "images/icon-2.png";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-2.png";
+module.exports = __webpack_require__.p + "images/photo_SB.png";
 
 /***/ }),
 /* 5 */
@@ -149,19 +149,7 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
 });
 
 /***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */
+/* 6 */
 /***/ (function(module, exports) {
 
 $("#selectmenu").selectmenu({ style: "dropdown", width:140 });
