@@ -2,12 +2,28 @@ div(class="form-elements")
     +header-of-block("FORM ELEMENTS")
     div(class="form-elements__spacer")
     div(class="form-elements__left-block")
-        input(class="form-elements__input-text input-text", type="text", name="your-name", value="Your Name")
+        input(class="form-elements__input-text input-text", type="text", name="your-name", value="Your Name")/
         div(class="form-elements__message message message_color_red") ERROR
-        input(class="form-elements__input-text input-text", type="text", name="your-email", value="Your Email")
+        input(class="form-elements__input-text input-text", type="text", name="your-email", value="Your Email")/
         div(class="form-elements__message message message_color_green") THANKS!
         textarea(class="form-elements__input-textarea input-text") Your Message
-        input(class="std-button form-elements__button std-button_color_green", type="submit", value="SUBMIT")
+        input(class="std-button form-elements__button std-button_color_green", type="submit", value="SUBMIT")/
     div(class="form-elements__right-block")
         +header-of-block("TOGGLES")
+        div(class="form-elements__positioner-1")
+            label(class="switch form-elements__switch")
+                input(class="switch__input", type="checkbox")/
+                span(class="switch__text", data-yes="ON", data-no="OFF")
+                span(class="switch__slider")
+            label(class="switch form-elements__switch")
+                input(class="switch__input", type="checkbox", checked)/
+                span(class="switch__text", data-yes="ON", data-no="OFF")
+                span(class="switch__slider")
         +header-of-block("TICK BOXES")
+        div(class="form-elements__positioner-2")
+            input(class="tick-box-input", type="checkbox", id="c1", checked)/
+            label(for="c1")
+                span(class="tick-box")
+            input(class="tick-box-input", type="checkbox", id="c2")/
+            label(for="c2")
+                span(class="tick-box")

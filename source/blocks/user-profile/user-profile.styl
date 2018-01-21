@@ -1,4 +1,5 @@
 .user-profile
+    position relative
     float right
     width 268px
 
@@ -33,3 +34,52 @@
 .block-2
     background #4EB7A8
     margin 28px 0 0 0
+    
+.block-1:before
+    content ''
+    border 6px solid transparent
+    border-right 6px solid #E5E5E5
+    position absolute
+    left 91px
+    top 104px
+
+.block-2:before
+    content ''
+    border 6px solid transparent
+    border-right 6px solid #4EB7A8
+    position absolute
+    left 91px
+    top 224px
+    
+.user-profile__name
+    display block
+    font-size 1rem
+    font-weight normal
+    text-align center
+    margin 9px 0 0 0
+
+.user-profile__post
+    display block
+    font-size 0.6rem
+    letter-spacing 0.04rem
+    text-align center
+    margin 1px 0 0 0
+
+.user-profile__name_theme_light
+    color #E75735
+
+.user-profile__post_theme_light
+    color #4F4F4F
+
+.user-profile__name_theme_green
+    color #FFFFFF
+
+.user-profile__post_theme_green
+    color #FFFFFF
+
+.user-profile__icons
+    padding 10px 0 0 5px
+    text-align center
+
+.user-profile__social-icon
+    margin 0 17px 0 23px

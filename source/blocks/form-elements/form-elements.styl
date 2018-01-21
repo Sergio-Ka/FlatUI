@@ -8,7 +8,10 @@
 
 .form-elements__right-block
     float right
-    width 50%
+    width 48%
+    text-align center
+    padding 0 0 0 8px
+    margin-top -16px
 
 .form-elements__spacer
     width 100%
@@ -79,3 +82,94 @@
 
 .message_color_green
     background #4EB7A8
+
+.form-elements__positioner-1
+    padding 16px 0 22px 0
+
+.switch
+    position relative
+    display inline-block
+    width 60px
+    height 24px
+    border-radius 34px
+    cursor pointer
+    
+.form-elements__switch
+    margin: 0 7px 0 8px
+
+.switch__input
+    position absolute
+    top 0
+    left 0
+    opacity 0
+
+.switch__text
+    background-color #E5E5E5
+    border-radius inherit
+    color #FFFFFF
+    display block
+    font-size 0.6rem
+    font-weight bold
+    height inherit
+    position relative
+
+.switch__text:before
+.switch__text:after
+    position absolute
+    top 50%
+    margin-top -0.5em
+    line-height 1
+    transition inherit
+    
+.switch__text:before
+    content attr(data-no)
+    right 11px
+
+.switch__text:after
+    content attr(data-yes)
+    left 13px
+    color #FFFFFF
+    font-size 0.6rem
+    font-weight bold
+    opacity 0
+    
+.switch__input:checked ~ .switch__text
+    background-color #4EB7A8
+    
+.switch__input:checked ~ .switch__text:before
+    opacity 0
+    
+.switch__input:checked ~ .switch__text:after
+    opacity 1
+    
+.switch__slider
+    position absolute
+    top 3px
+    left 3px
+    height 18px
+    width 18px
+    background-color #FFFFFF
+    border-radius 100%
+    
+.switch__input:checked ~ .switch__slider
+    left 39px
+
+.switch__text, .switch__slider
+    transition: All 0.4s ease
+
+.tick-box-input
+    display none
+    
+.tick-box
+    display inline-block
+    width 23px
+    height 23px
+    margin-right 17px
+    background url(blocks/form-elements/images/tick-boxes.png) -30px 0 no-repeat
+    cursor pointer
+    
+.tick-box-input:checked + label span
+    background url(blocks/form-elements/images/tick-boxes.png) 0 0 no-repeat
+
+.form-elements__positioner-2
+    padding 19px 0 0 11px
