@@ -1,8 +1,12 @@
 div(class="search-drop-down")
     +header-of-block("SEARCH / DROP DOWN")
+    input(class="search-input search-drop-down__input", type="search", placeholder="Search", name="keywords")
+    button(class="search-button search-drop-down__button")
+    input(class="search-input search-input_color_red search-drop-down__input", type="search", placeholder="I've not found what I'm looking for...", name="keywords")
+    button(class="search-button search-drop-down__button")
     select(id="selectmenu")
-        option Slower
+        option(selected="selected") Choose An Option
         option Slow
-        option(selected="selected") Medium
+        option Slower
         option Fast
         option Faster
