@@ -9,3 +9,4 @@ import './blocks/user-profile/images/DR.png';
 import './blocks/user-profile/images/DR_white.png';
 require('./blocks/sliders/sliders.js');
 require('./blocks/search-drop-down/search-drop-down.js');
+require('./blocks/calendar/calendar.js');

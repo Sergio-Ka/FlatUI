@@ -9715,7 +9715,7 @@ function Datepicker() {
 	$.extend( this._defaults, this.regional[ "" ] );
 	this.regional.en = $.extend( true, {}, this.regional[ "" ] );
 	this.regional[ "en-US" ] = $.extend( true, {}, this.regional.en );
-	this.dpDiv = datepicker_bindHover( $( "<div id='" + this._mainDivId + "' class='ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>" ) );
+	this.dpDiv = datepicker_bindHover( $( "<div id='" + this._mainDivId + "' class='ui-datepicker ui-widget-content ui-helper-clearfix ui-corner-all'></div>" ) );
 }
 
 $.extend( Datepicker.prototype, {
@@ -9768,7 +9768,7 @@ $.extend( Datepicker.prototype, {
 			drawMonth: 0, drawYear: 0, // month being drawn
 			inline: inline, // is datepicker inline or not
 			dpDiv: ( !inline ? this.dpDiv : // presentation div
-			datepicker_bindHover( $( "<div class='" + this._inlineClass + " ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>" ) ) ) };
+			datepicker_bindHover( $( "<div class='" + this._inlineClass + " ui-datepicker ui-widget-content ui-helper-clearfix ui-corner-all'></div>" ) ) ) };
 	},
 
 	/* Attach the date picker to an input field. */

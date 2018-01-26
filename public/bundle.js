@@ -98,6 +98,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__(10);
 __webpack_require__(11);
+__webpack_require__(12);
 
 /***/ }),
 /* 1 */
@@ -198,6 +199,12 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
 /***/ (function(module, exports) {
 
 $("#selectmenu").selectmenu({ style: "dropdown", width: "116.6%" });
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+$( ".datepicker" ).datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
 
 /***/ })
 /******/ ]);
