@@ -198,7 +198,7 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
 /* 11 */
 /***/ (function(module, exports) {
 
-$("#selectmenu").selectmenu({ style: "dropdown", width: "116.6%" });
+$("#selectmenu").selectmenu();
 
 /***/ }),
 /* 12 */
