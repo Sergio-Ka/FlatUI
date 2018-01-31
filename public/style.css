@@ -583,14 +583,15 @@
   width: 48.5%;
 }
 .search {
-  width: 100%;
   height: 28px;
 }
 .search-drop-down__search-1 {
   margin: 20px 0 16px;
+  width: 100%;
 }
 .search-drop-down__search-2 {
   margin: 0 0 8px;
+  width: 100%;
 }
 .search__input {
   border: none;
