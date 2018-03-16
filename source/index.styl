@@ -15,6 +15,7 @@
 }
 
 @import 'blocks/common/header-of-block/header-of-block.styl'
+@import 'blocks/common/std-button/std-button.styl'
 @import 'blocks/std-buttons/std-buttons.styl'
 @import 'blocks/arr-buttons/arr-buttons.styl'
 @import 'blocks/perc-pie-chart/perc-pie-chart.styl'
@@ -31,96 +32,17 @@
 
 .main
 	font-size 18px
+	background #ffffff
+	color #4F4F4F
+	font-family 'Lato', Sans-Serif
 	&__page
 		width 100%
 		max-width 594px
 		min-height 3176px
 		margin 0 auto
 
-.page
-	background #ffffff
-	color #4F4F4F
-	font-family 'Lato', Sans-Serif
-
 .page__positioner-1
 	min-height 358px
 
 .page__positioner-2
 	min-height 528px
-
-
-@media only screen and (max-width 604px)
-	.news-events__events
-		float left
-
-	.perc-pie-chart__graphics:nth-child(2)
-	.perc-pie-chart__graphics:nth-child(3)
-	.perc-pie-chart__graphics:nth-child(4)
-	.perc-pie-chart__graphics:nth-child(5)
-	.perc-pie-chart__graphics:last-child
-		margin 20px
-
-	.header-of-block
-		margin-top 20px
-
-	.sliders__right-column
-		padding 40px 10px 20px
-		float left
-
-	.sliders__left-column
-		padding 40px 10px 20px
-
-	.stages__graphics
-		margin 0
-
-	.stage__text
-		font-size 0.5rem
-
-	.form-elements__right-block
-	.form-elements__left-block
-		float left
-		width 95%
-		padding 2.5%
-
-	.user-profile
-		float left
-		margin 10px
-
-	.search-drop-down__search-1
-	.search-drop-down__search-2
-		margin 10px
-
-	.search-drop-down
-		width 95%
-
-	.ui-button
-		margin-left 10px
-		width 95.4%
-
-	.news-events__events
-		float left
-		min-width 275px
-		margin-bottom 20px
-
-	.news-events__news
-		min-width 275px
-
-	.messaging
-		float left
-		min-width 275px
-
-	.messaging__massage:before
-		top 232px
-
-	.calendar
-		min-width 275px
-
-	.datepicker__digit
-		width 185px
-
-@media only screen and (max-width 410px)
-	.ui-button
-		width: 90%;
-
-	.location__legend
-		height 6rem

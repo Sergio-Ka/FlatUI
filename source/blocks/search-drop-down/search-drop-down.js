@@ -1,1 +1,1 @@
-$("#selectmenu").selectmenu();
+require('./selectmenu/selectmenu.js');
