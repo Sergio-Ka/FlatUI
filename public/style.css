@@ -491,6 +491,9 @@
 .tick-box-input:checked + label span {
   background: url(images/tick-boxes.png) 0 0 no-repeat;
 }
+.simple-form {
+  min-height: 214px;
+}
 .simple-form__input-text {
   float: right;
   width: 67.4%;
@@ -894,6 +897,7 @@
   padding-top: 12px;
 }
 .chat__header-1 {
+  position: relative;
   background: #4eb7a8;
   color: #fff;
   min-height: 65px;
@@ -910,7 +914,7 @@
 }
 .chat__photo {
   position: absolute;
-  top: 129px;
+  top: 70px;
   left: 32.6%;
   width: 86px;
   min-height: 86px;
@@ -933,14 +937,15 @@
 }
 .chat__icon_left {
   left: 9.5%;
-  top: 197px;
+  top: 138px;
 }
 .chat__icon_right {
   background-position: 97% 0;
   left: 81.7%;
-  top: 196px;
+  top: 137px;
 }
-.chat__massage {
+.chat__message {
+  position: relative;
   background: #fff;
   color: #868686;
   width: 199px;
@@ -951,16 +956,16 @@
   font-size: 0.7rem;
   letter-spacing: 0.04rem;
 }
-.chat__massage:before {
+.chat__message-tail {
   content: '';
   border: 7px solid transparent;
   border-bottom: 6px solid #fff;
   position: absolute;
   left: 50%;
   margin-left: -12px;
-  top: 224px;
+  top: -12px;
 }
-.chat__massage-input {
+.chat__message-input {
   display: block;
   width: 200px;
   height: 66px;
