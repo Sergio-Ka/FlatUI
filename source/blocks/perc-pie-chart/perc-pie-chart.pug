@@ -1,26 +1,26 @@
 mixin percentage(percent)
-	-var dasharray, a, b, xcoordtext;
-	-a = percent*295/100;
-	-b = 295 - a;
-	-dasharray = a+" "+b;
-	-(percent<10 && percent>=0)?xcoordtext = "38%":xcoordtext = "25%";
-		svg(class="percentage")
-			circle(class="percentage__circle", r="45", cx="50%", cy="50%", stroke-dasharray= dasharray)
-			text(class="percentage__text", x= xcoordtext, y="66%")= percent
+    -var dasharray, a, b, xcoordtext;
+    -a = percent*295/100;
+    -b = 295 - a;
+    -dasharray = a+" "+b;
+    -(percent<10 && percent>=0)?xcoordtext = "38%":xcoordtext = "25%";
+        svg(class="percentage")
+            circle(class="percentage__circle", r="45", cx="50%", cy="50%", stroke-dasharray= dasharray)
+            text(class="percentage__text", x= xcoordtext, y="66%")= percent
 
 div(class="perc-pie-chart")
-	+header-of-block("PERCENTAGES / PIE CHART")
-	div(class="perc-pie-chart__graphics")
-		+percentage(0)
-	div(class="perc-pie-chart__graphics")
-		+percentage(38)
-	div(class="perc-pie-chart__graphics")
-		+percentage(62)
-	div(class="perc-pie-chart__graphics")
-		+percentage(89)
-	div(class="perc-pie-chart__graphics")
-		svg(class="pie-chart")
-			circle(class="pie-chart__circle pie-chart__circle_color_grey", r="39", cx="50%", cy="50%")
-			circle(class="pie-chart__circle pie-chart__circle_color_red", r="39", cx="50%", cy="50%", stroke-dashoffset="112", stroke-dasharray="28 267")
-			circle(class="pie-chart__circle pie-chart__circle_color_green", r="39", cx="50%", cy="50%", stroke-dashoffset="85", stroke-dasharray="118 177")
-			circle(class="pie-chart__circle pie-chart__circle_color_light-grey", r="39", cx="50%", cy="50%", stroke-dashoffset="-30", stroke-dasharray="73 222")
+    +header-of-block("PERCENTAGES / PIE CHART")
+    div(class="perc-pie-chart__graphics")
+        +percentage(0)
+    div(class="perc-pie-chart__graphics")
+        +percentage(38)
+    div(class="perc-pie-chart__graphics")
+        +percentage(62)
+    div(class="perc-pie-chart__graphics")
+        +percentage(89)
+    div(class="perc-pie-chart__graphics")
+        svg(class="pie-chart")
+            circle(class="pie-chart__circle pie-chart__circle_color_grey", r="39", cx="50%", cy="50%")
+            circle(class="pie-chart__circle pie-chart__circle_color_red", r="39", cx="50%", cy="50%", stroke-dashoffset="112", stroke-dasharray="28 267")
+            circle(class="pie-chart__circle pie-chart__circle_color_green", r="39", cx="50%", cy="50%", stroke-dashoffset="85", stroke-dasharray="118 177")
+            circle(class="pie-chart__circle pie-chart__circle_color_light-grey", r="39", cx="50%", cy="50%", stroke-dashoffset="-30", stroke-dasharray="73 222")
