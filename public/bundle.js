@@ -75,18 +75,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_location_map_images_icon_1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__blocks_location_map_images_icon_1_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_map_images_icon_2_png__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_location_map_images_icon_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__blocks_location_map_images_icon_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_FB_png__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_FB_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_FB_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_FB_white_png__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_FB_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_FB_white_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_TW_png__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_TW_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_TW_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_TW_white_png__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_TW_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_TW_white_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_DR_png__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_DR_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_DR_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_DR_white_png__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_DR_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_DR_white_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_facebook_png__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_facebook_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blocks_user_profile_profile_images_facebook_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_facebook_white_png__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_facebook_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__blocks_user_profile_profile_images_facebook_white_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_twitter_png__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_twitter_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__blocks_user_profile_profile_images_twitter_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_twitter_white_png__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_twitter_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__blocks_user_profile_profile_images_twitter_white_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_dribbble_png__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_dribbble_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__blocks_user_profile_profile_images_dribbble_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_dribbble_white_png__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_dribbble_white_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__blocks_user_profile_profile_images_dribbble_white_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_favicon_ico__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_favicon_ico___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_favicon_ico__);
 
 
 
@@ -96,9 +98,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__webpack_require__(10);
-__webpack_require__(13);
-__webpack_require__(15);
+
+__webpack_require__(11);
+__webpack_require__(14);
+__webpack_require__(16);
 
 /***/ }),
 /* 1 */
@@ -122,47 +125,53 @@ module.exports = __webpack_require__.p + "images/icon-2.png";
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/FB.png";
+module.exports = __webpack_require__.p + "images/facebook.png";
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/FB_white.png";
+module.exports = __webpack_require__.p + "images/facebook-white.png";
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/TW.png";
+module.exports = __webpack_require__.p + "images/twitter.png";
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/TW_white.png";
+module.exports = __webpack_require__.p + "images/twitter-white.png";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/DR.png";
+module.exports = __webpack_require__.p + "images/dribbble.png";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/DR_white.png";
+module.exports = __webpack_require__.p + "images/dribbble-white.png";
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(11);
-__webpack_require__(12);
+module.exports = __webpack_require__.p + "images/favicon.ico";
 
 /***/ }),
 /* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(12);
+__webpack_require__(13);
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports) {
 
 $("#slider1").slider({ // вид первого слайдера и настройки
@@ -180,7 +189,7 @@ $("#slider1").slider({ // вид первого слайдера и настро
 });
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 $("#slider2").slider({ // вид второго слайдера и настройки
@@ -206,25 +215,25 @@ $('#slider2 .ui-slider-range-min').each(function (index, handle) {
 });
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(14);
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-$("#selectmenu").selectmenu();
+__webpack_require__(15);
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(16);
+$(".selectmenu").selectmenu();
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(17);
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
 $( ".datepicker" ).datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});

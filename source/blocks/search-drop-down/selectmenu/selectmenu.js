@@ -1,1 +1,1 @@
-$("#selectmenu").selectmenu();
+$(".selectmenu").selectmenu();

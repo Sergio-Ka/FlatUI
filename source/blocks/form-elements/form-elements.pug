@@ -13,7 +13,7 @@ div(class="form-elements")
                 input(class="std-button std-button_color_green", type="submit", value="SUBMIT")/
     div(class="form-elements__right-block")
         +header-of-block("TOGGLES")
-        div(class="form-elements__positioner-1")
+        form(class="form-elements__positioner-1")
             div(class="form-elements__switch")
                 label(class="switch")
                     input(class="switch__input", type="checkbox")/
@@ -25,7 +25,7 @@ div(class="form-elements")
                     span(class="switch__text", data-yes="ON", data-no="OFF")
                     span(class="switch__slider")
         +header-of-block("TICK BOXES")
-        div(class="form-elements__positioner-2")
+        form(class="form-elements__positioner-2")
             div(class="form-elements__tick-box")
                 input(class="tick-box-input", type="checkbox", id="c1", checked)/
                 label(for="c1")
