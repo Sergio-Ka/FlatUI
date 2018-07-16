@@ -4,10 +4,10 @@ $("#slider1").slider({ // вид первого слайдера и настро
     max: 100,
 	value: 40,
     create: function (event, ui) {
-        $('.ui-slider-handle').append('<input class="sliderValue" value="40"/>');
-        $('.ui-slider-handle').append('<div class="sliderValue_2"></div>');
+        $('.ui-slider-handle').append('<input class="slider-value" value="40"/>');
+        $('.ui-slider-handle').append('<div class="slider-value__tail"></div>');
     },
     slide: function (event, ui) {
-        $(".sliderValue").val(ui.value);
+        $(".slider-value").val(ui.value);
     }
 });

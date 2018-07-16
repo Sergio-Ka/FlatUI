@@ -8,6 +8,7 @@
     min-height 199px
     padding 13px 17px 0 23px
     float right
+    position relative
     border-top-right-radius 3px
     border-bottom-right-radius 3px
     font-weight normal
@@ -18,22 +19,35 @@
     &_color_green
       background #4EB7A8
   &__date-1
-    float left
+    position absolute
+    left 17px
+    top -43px
     font-size 4rem
     font-weight normal
-    margin 3px 0 0 -5px
     line-height 3.5rem
   &__date-2
-    float left
+    position absolute
+    left 110px
+    top 30px
     font-size 1.8rem
     font-weight normal
-    margin 44px 0 0 10px
     letter-spacing -0.08rem
   &__title
+    position absolute
+    left 20px
+    top 90px
     font-size 0.7rem
     font-weight bold
     letter-spacing 0.03rem
-    margin 86px 0 -7px -3px
+  &__text
+    position absolute
+    left 21px
+    top 107px
+    letter-spacing 0.025rem
+  &__button
+    position absolute
+    left 22px
+    top 144px
 
 @media only screen and (max-width 604px)
   .news-events__events
