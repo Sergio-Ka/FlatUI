@@ -1,54 +1,45 @@
 .events
-  background url(blocks/news-events/events/images/events-photo.png) -60px -1px no-repeat
   min-height 212px
   border-radius 3px
   color #FFFFFF
-  &__content-block
-    width 153px
-    min-height 199px
-    padding 13px 17px 0 23px
-    float right
-    position relative
+  display flex
+  &_color_green
+      background #4EB7A8
+  &__content-block-left
+    background url(blocks/news-events/events/images/events-photo.png) -60px -1px no-repeat
+    //background-size cover
+    width 37.306%
+    border-top-left-radius 3px
+    border-bottom-left-radius 3px
+  &__content-block-right
+    width 62.694%
+    padding 16px 17px 0 17px
     border-top-right-radius 3px
     border-bottom-right-radius 3px
     font-weight normal
     font-size 0.63rem
-    margin 0
     letter-spacing 0.02rem
     line-height 0.75rem
-    &_color_green
-      background #4EB7A8
   &__date-1
-    position absolute
-    left 17px
-    top -43px
+    display inline-block
     font-size 4rem
     font-weight normal
     line-height 3.5rem
+    margin 0
   &__date-2
-    position absolute
-    left 110px
-    top 30px
+    display inline-block
     font-size 1.8rem
     font-weight normal
     letter-spacing -0.08rem
+    margin-left 9px
   &__title
-    position absolute
-    left 20px
-    top 90px
     font-size 0.7rem
     font-weight bold
     letter-spacing 0.03rem
+    text-transform uppercase
+    margin 3px 0 0 4px
   &__text
-    position absolute
-    left 21px
-    top 107px
     letter-spacing 0.025rem
+    margin 4px 0 0 5px
   &__button
-    position absolute
-    left 22px
-    top 144px
-
-@media only screen and (max-width 604px)
-  .news-events__events
-    float left
+    margin 0 0 0 6px

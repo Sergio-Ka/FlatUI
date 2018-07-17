@@ -16,7 +16,7 @@
   font-size: 18px;
   background: #fff;
   color: #4f4f4f;
-  font-family: 'Lato', Sans-Serif;
+  font-family: 'Lato', 'Arial', Sans-Serif;
 }
 .main__page {
   width: 100%;
@@ -38,6 +38,7 @@
   text-align: center;
   color: #4f4f4f;
   letter-spacing: 0.06rem;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 604px) {
   .header-of-block {
@@ -53,6 +54,7 @@
   border-radius: 4px;
   font-family: 'Lato', Sans-Serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .std-button_inactive-green {
   color: #4eb7a8;
@@ -221,6 +223,7 @@
   border-radius: 50%;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 .arr-button__arrow {
   width: 27px;
@@ -239,13 +242,12 @@
 }
 .perc-pie-chart {
   min-height: 161px;
-  margin-left: -9px;
 }
 .perc-pie-chart__graphics {
   float: left;
 }
 .perc-pie-chart__graphics:nth-child(2) {
-  margin: 7px 16px 0 0;
+  margin: 7px 16px 0 -9px;
 }
 .perc-pie-chart__graphics:nth-child(3) {
   margin: 10px 37px 0 0;
@@ -470,7 +472,6 @@
 .switch__text:after {
   position: absolute;
   top: 6px;
-  line-height: 1;
   transition: inherit;
 }
 .switch__text:before {
@@ -530,8 +531,8 @@
 .simple-form__input-text {
   float: right;
   width: 67.4%;
-  height: 26px;
   margin: 0 0 12px 0;
+  padding: 0.3rem 0 0.3rem 0;
   background: #e5e5e5;
   color: #888;
   border: none;
@@ -563,8 +564,8 @@
 .simple-form__message {
   float: right;
   width: 24.8%;
-  height: 23px;
   margin: 0 0 0 2.69%;
+  padding-bottom: 0.3rem;
   position: relative;
   border-radius: 3px;
   color: #fff;
@@ -572,6 +573,7 @@
   font-size: 0.5rem;
   line-height: 1rem;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding-top: 5px;
 }
@@ -607,13 +609,15 @@
 }
 .search-drop-down__search-1 {
   margin: 20px 0 16px;
-  height: 28px;
   width: 100%;
 }
 .search-drop-down__search-2 {
   margin: 0 0 8px;
-  height: 28px;
   width: 100%;
+}
+.search {
+  display: flex;
+  min-height: 28px;
 }
 .search__input {
   border: none;
@@ -622,9 +626,7 @@
   border-bottom-left-radius: 3px;
   padding-left: 13px;
   color: #888;
-  float: left;
   width: 88.5416%;
-  height: 28px;
 }
 .search__input_color_red {
   background: #e75735;
@@ -633,11 +635,10 @@
   font-family: 'Lato', Sans-Serif;
 }
 .search__button {
-  float: left;
   width: 11.4584%;
-  height: 28px;
+  cursor: pointer;
   border: none;
-  background: #e75735 url(images/mag-glass.png) 10px 7px no-repeat;
+  background: #e75735 url(images/mag-glass.png) 50% 50% no-repeat;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -651,20 +652,17 @@
   }
 }
 .user-profile {
-  float: right;
-  width: 268px;
+  display: flex;
+  flex-direction: column;
+  min-width: 268px;
 }
 .user-profile__block-1 {
-  position: relative;
   width: 266px;
-  height: 93px;
-  margin: 30px 0 0 0;
+  margin: 15px 0 0 38px;
 }
 .user-profile__block-2 {
-  position: relative;
   width: 266px;
-  height: 93px;
-  margin: 27px 0 0 0;
+  margin: 27px 0 0 38px;
 }
 .profile__photo {
   float: left;
@@ -724,6 +722,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.04rem;
   text-align: center;
+  text-transform: uppercase;
   margin: 1px 0 0 0;
 }
 .profile__post_theme_light {
@@ -759,26 +758,29 @@
   float: right;
 }
 .news {
-  background: url(images/news-photo.png) -53px 0 no-repeat;
   min-height: 212px;
   border-radius: 3px;
   color: #fff;
+  display: flex;
 }
-.news__content-block {
-  width: 153px;
-  min-height: 192px;
+.news_color_red {
+  background: #e75735;
+}
+.news__content-block-left {
+  background: url(images/news-photo.png) -53px 0 no-repeat;
+  width: 38.306%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.news__content-block-right {
+  width: 61.694%;
   padding: 20px 17px 0 23px;
-  float: right;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   font-weight: normal;
   font-size: 0.63rem;
-  margin: 0;
   letter-spacing: 0.02rem;
   line-height: 0.75rem;
-}
-.news__content-block_color_red {
-  background: #e75735;
 }
 .news__header {
   font-weight: normal;
@@ -791,69 +793,60 @@
   font-size: 0.6rem;
   margin: 12px 0 11px;
   letter-spacing: 0.06rem;
+  text-transform: uppercase;
 }
 .events {
-  background: url(images/events-photo.png) -60px -1px no-repeat;
   min-height: 212px;
   border-radius: 3px;
   color: #fff;
+  display: flex;
 }
-.events__content-block {
-  width: 153px;
-  min-height: 199px;
-  padding: 13px 17px 0 23px;
-  float: right;
-  position: relative;
+.events_color_green {
+  background: #4eb7a8;
+}
+.events__content-block-left {
+  background: url(images/events-photo.png) -60px -1px no-repeat;
+  width: 37.306%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.events__content-block-right {
+  width: 62.694%;
+  padding: 16px 17px 0 17px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   font-weight: normal;
   font-size: 0.63rem;
-  margin: 0;
   letter-spacing: 0.02rem;
   line-height: 0.75rem;
 }
-.events__content-block_color_green {
-  background: #4eb7a8;
-}
 .events__date-1 {
-  position: absolute;
-  left: 17px;
-  top: -43px;
+  display: inline-block;
   font-size: 4rem;
   font-weight: normal;
   line-height: 3.5rem;
+  margin: 0;
 }
 .events__date-2 {
-  position: absolute;
-  left: 110px;
-  top: 30px;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: normal;
   letter-spacing: -0.08rem;
+  margin-left: 9px;
 }
 .events__title {
-  position: absolute;
-  left: 20px;
-  top: 90px;
   font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  margin: 3px 0 0 4px;
 }
 .events__text {
-  position: absolute;
-  left: 21px;
-  top: 107px;
   letter-spacing: 0.025rem;
+  margin: 4px 0 0 5px;
 }
 .events__button {
-  position: absolute;
-  left: 22px;
-  top: 144px;
-}
-@media only screen and (max-width: 604px) {
-  .news-events__events {
-    float: left;
-  }
+  margin: 0 0 0 6px;
 }
 @media only screen and (max-width: 604px) {
   .news-events__events {
@@ -880,12 +873,12 @@
 .map__legend {
   background: #e75735;
   color: #fff;
-  height: 3.88rem;
   width: 100%;
   position: absolute;
   bottom: -3.63rem;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  padding: 0 0 1.1rem 0;
 }
 .map__invite {
   float: left;
@@ -900,6 +893,7 @@
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 .map__icon {
   float: right;
@@ -922,20 +916,19 @@
 }
 .datepicker__digit {
   font-family: 'Lato', Sans-Serif;
-  width: 187px;
-  height: 104px;
+  max-width: 187px;
   background: #e75735;
   color: #fff;
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   font-weight: normal;
-  padding: 0.3rem 0 0 33.1%;
+  padding: 0.35rem 0 0.25rem 33.1%;
   border: none;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 @media only screen and (max-width: 604px) {
   .datepicker__digit {
-    width: 185px;
+    max-width: 185px;
   }
 }
 @media only screen and (max-width: 604px) {
@@ -987,7 +980,7 @@
 .chat__icon {
   position: absolute;
   width: 25px;
-  height: 22px;
+  min-height: 22px;
   background: url(images/icon-3.png) 0 0 no-repeat;
 }
 .chat__icon_left {
@@ -1004,7 +997,7 @@
   background: #fff;
   color: #868686;
   width: 199px;
-  height: 50px;
+  min-height: 50px;
   border-radius: 5px;
   margin: 0 auto;
   padding: 17px 25px 0 20px;
@@ -1022,7 +1015,7 @@
 .chat__message-input {
   display: block;
   width: 200px;
-  height: 66px;
+  min-height: 66px;
   border: 4px solid #fff;
   border-radius: 5px;
   margin: 19px auto 0;
