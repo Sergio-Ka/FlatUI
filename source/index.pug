@@ -6,10 +6,8 @@ html(class="main")
         meta(name = "keywords", content = "верстка")/
         meta(name = "author", content = "Sergey Karbyshev")/
         meta(name = "viewport", content = "initial-scale=1.0, width=device-width")/
-        link(href="vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css", rel="stylesheet")/
         link(rel = "shortcut icon", href = "./public/images/favicon.ico", type = "image/x-icon")/
-        script(src="vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js")
-        script(src="vendors/jquery-ui-1.12.1.custom/jquery-ui.js")
+        link(href="vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css", rel="stylesheet")/
         title FlatUI
     body(class="main__page")
         include blocks/common/header-of-block/header-of-block.pug
@@ -28,3 +26,5 @@ html(class="main")
             include blocks/calendar/calendar.pug
             include blocks/messaging/messaging.pug
         include blocks/video/video.pug
+        script(src="vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js")
+        script(src="vendors/jquery-ui-1.12.1.custom/jquery-ui.js")
