@@ -174,17 +174,18 @@ __webpack_require__(13);
 /* 12 */
 /***/ (function(module, exports) {
 
-$("#slider1").slider({ // вид первого слайдера и настройки
-    value: '',
+var $slider1 = $('.js-slider-1');
+$slider1.slider({
     min: 0,
     max: 100,
-	value: 40,
+    value: 40,
     create: function (event, ui) {
-        $('.ui-slider-handle').append('<input class="slider-value" value="40"/>');
-        $('.ui-slider-handle').append('<div class="slider-value__tail"></div>');
+        var $sliderhandle = $('.ui-slider-handle');
+        $sliderhandle.append('<input class="slider-value js-slider-value" value="40"/><div class="slider-value__tail"></div>');
     },
     slide: function (event, ui) {
-        $(".slider-value").val(ui.value);
+        var $slidervalue = $(".js-slider-value");
+        $slidervalue.val(ui.value);
     }
 });
 
@@ -192,23 +193,24 @@ $("#slider1").slider({ // вид первого слайдера и настро
 /* 13 */
 /***/ (function(module, exports) {
 
-$("#slider2").slider({ // вид второго слайдера и настройки
-    value: '',
+var $slider2 = $(".js-slider-2");
+var $slider2handle = $('.js-slider-2 .ui-slider-handle');
+var $slider2range = $('.js-slider-2 .ui-slider-range-min');
+
+$slider2.slider({
     min: 0,
     max: 100,
     value: 75,
     range: 'min'
 });
 
-// добавляем разные классы для одинаковых слайдеров чтобы настроить стили независимо
-
-$('#slider2 .ui-slider-handle').each(function (index, handle) {
+$slider2handle.each(function (index, handle) {
     if (index % 2 == 0)
     $(handle).addClass('even-handle');
     else $(handle).addClass('odd-handle');
 });
 
-$('#slider2 .ui-slider-range-min').each(function (index, handle) {
+$slider2range.each(function (index, handle) {
     if (index % 2 == 0)
     $(handle).addClass('even-range-min');
     else $(handle).addClass('odd-range-min');
@@ -224,7 +226,8 @@ __webpack_require__(15);
 /* 15 */
 /***/ (function(module, exports) {
 
-$(".selectmenu").selectmenu();
+$selectmenu = $(".js-selectmenu");
+$selectmenu.selectmenu();
 
 /***/ }),
 /* 16 */
@@ -236,7 +239,8 @@ __webpack_require__(17);
 /* 17 */
 /***/ (function(module, exports) {
 
-$( ".datepicker" ).datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
+var $calendar = $( ".js-datepicker" );
+$calendar.datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
 
 /***/ })
 /******/ ]);
