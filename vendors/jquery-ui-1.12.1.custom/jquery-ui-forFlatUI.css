@@ -21,10 +21,6 @@
   border: none;
 }
 
-.even-handle, .even-range-min {
-  background: #4EB7A8 !important;
-}
-
 .ui-slider .ui-slider-range {
   position: relative;
   z-index: 1;
@@ -33,6 +29,10 @@
   border: 0;
   background-position: 0 0;
   background: #E75735;
+}
+
+.even-handle, .even-range-min {
+  background: #4EB7A8 !important;
 }
 
 .ui-slider-horizontal {
