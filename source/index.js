@@ -1,13 +1,4 @@
 import './index.styl';
-import './blocks/location/map/images/icon-1.png';
-import './blocks/location/map/images/icon-2.png';
-import './blocks/user-profile/profile/images/facebook.png';
-import './blocks/user-profile/profile/images/facebook-white.png';
-import './blocks/user-profile/profile/images/twitter.png';
-import './blocks/user-profile/profile/images/twitter-white.png';
-import './blocks/user-profile/profile/images/dribbble.png';
-import './blocks/user-profile/profile/images/dribbble-white.png';
-import './images/favicon.ico';
 require('./blocks/sliders/sliders.js');
 require('./blocks/search-drop-down/search-drop-down.js');
 require('./blocks/calendar/calendar.js');
