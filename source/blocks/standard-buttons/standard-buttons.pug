@@ -1,0 +1,11 @@
+include ../header-of-block/header-of-block.pug
+include ../standard-button/standard-button.pug
+
+mixin standard-buttons(options = [{text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""}])
+    section.standard-buttons
+        +header-of-block("standard buttons")
+        form.standard-buttons__container
+            -options.forEach(function(item, i, arr) {
+                .standard-buttons__standard-button
+                    +standard-button({text:item.text, color:item.color, size:item.size, effect:item.effect, activeStatus:item.activeStatus, theme:item.theme})
+            -});

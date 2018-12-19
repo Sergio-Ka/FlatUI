@@ -1,0 +1,78 @@
+.standard-button
+  width 6.556rem
+  height 1.944rem
+  border none
+  cursor pointer
+  color #FFFFFF
+  border-radius 0.222rem
+  font-family 'Lato', Sans-Serif
+  font-weight bold
+  text-transform uppercase
+  &_inactive-green
+    color #4EB7A8
+    background #FFFFFF
+    border 0.056rem solid #4EB7A8
+    border-bottom 0.222rem solid #4EB7A8
+  &_inactive-red
+    color #E75735
+    background #FFFFFF
+    border 0.056rem solid #E75735
+    border-bottom 0.222rem solid #E75735
+  &_color_green
+    background #4EB7A8
+    border-bottom 0.222rem solid #28A290
+  &_color_red
+    background #E75735
+    border-bottom 0.222rem solid #BF3F1F
+  &_ripple-effect
+    height 1.778rem
+    position relative
+    overflow hidden
+    border none
+  &_ripple-effect:after
+    content ''
+    position absolute
+    top 50%
+    left 50%
+    width 0.278rem
+    height 0.278rem
+    background rgba(255, 255, 255, .6)
+    opacity 0
+    border-radius 100%
+  &_ripple-effect:active::after
+    animation ripple 0.8s ease-out
+  &_size_small
+    width 4.333rem
+    height 1.222rem
+    font-size 0.48rem
+    letter-spacing 0.08rem
+    font-weight bold
+  &_theme_events
+    display block
+    background #FFFFFF
+    color #4EB7A8
+    font-size 0.6rem
+    letter-spacing 0.03rem
+    width 7.111rem
+    height 1.444rem
+    margin 1.056rem 0.5rem 1.333rem
+  &_theme_chat
+    display block
+    font-family 'Lato', Sans-Serif
+    width 13.556rem
+    height 1.944rem
+    margin 0.833rem auto
+
+@keyframes ripple
+  0%
+    transform scale(0, 0)
+    opacity 1
+  20%
+    transform scale(15, 15)
+    opacity 1
+  50%
+    transform scale(30, 30)
+    opacity 0.3
+  100%
+    opacity 0
+    transform scale(40, 40)

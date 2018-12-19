@@ -1,19 +1,15 @@
 .search-drop-down
   float left
   width 48.5%
-  &__search-1
-    margin 20px 0 16px
-    width 100%
-  &__search-2
-    margin 0 0 8px
-    width 100%
-
-@import 'search-form/search-form.styl'
-
-@media only screen and (max-width 604px)
-  .search-drop-down__search-1
-  .search-drop-down__search-2
-    margin 10px
-
-  .search-drop-down
+  @media only screen and (max-width 33.556rem)
     width 95%
+  &__search-success
+    margin 1.111rem 0 0.889rem
+    width 100%
+    @media only screen and (max-width 33.556rem)
+      margin 0.556rem
+  &__search-unsuccess
+    margin 0 0 0.444rem
+    width 100%
+    @media only screen and (max-width 33.556rem)
+      margin 0.556rem

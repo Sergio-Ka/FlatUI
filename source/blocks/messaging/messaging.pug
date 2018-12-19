@@ -1,13 +1,16 @@
-div(class="messaging")
+include ../header-of-block/header-of-block.pug
+include ../standard-button/standard-button.pug
+
+section.messaging
     +header-of-block("messaging")
-    form(class="messaging__container")
-        div(class="chat__header-1") Sarah Brown
-            div(class="chat__photo")
-            div(class="chat__icon chat__icon_left")
-            div(class="chat__icon chat__icon_right")
-        div(class="chat__header-2")
-        div(class="chat__body")
-            div(class="chat__message") Hey ! So are we cool to meet at the art gallery? Say 8pm
-                div(class="chat__message-tail")
-            textarea(class="chat__message-input") Yeah that sounds great. See you then.
-            button(class="std-button std-button_color_green std-button_theme_chat") reply
+    form.messaging__container
+        .chat__block Sarah Brown
+            .chat__photo
+            .chat__icon.chat__icon_left
+            .chat__icon.chat__icon_right
+        .chat__header-lower-block
+        .chat__body
+            .chat__message Hey ! So are we cool to meet at the art gallery? Say 8pm
+                .chat__message-tail
+            textarea.chat__message-input Yeah that sounds great. See you then.
+            +standard-button({text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"})

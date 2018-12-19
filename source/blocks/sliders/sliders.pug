@@ -1,12 +1,11 @@
-div(class="sliders")
-    +header-of-block("sliders")
-    div(class="sliders__left-column")
-        div(class="slider-1 js-slider-1")
-    div(class="sliders__right-column")
-        div(class="slider-2 js-slider-2")
-        div(class="slider2__scale")
-            div(class="slider2__digit-1") 0
-            div(class="slider2__digit-2") 25
-            div(class="slider2__digit-3") 50
-            div(class="slider2__digit-4") 75
-            div(class="slider2__digit-5") 100
+include ../header-of-block/header-of-block.pug
+include slider-with-pop-up/slider-with-pop-up.pug
+include slider-discrete/slider-discrete.pug
+
+mixin sliders()
+    section.sliders
+        +header-of-block("sliders")
+        .sliders__left-column
+            +slider-with-pop-up()
+        .sliders__right-column
+            +slider-discrete()

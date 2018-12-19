@@ -1,4 +1,7 @@
-import './index.styl';
-require('./blocks/sliders/sliders.js');
-require('./blocks/search-drop-down/search-drop-down.js');
-require('./blocks/calendar/calendar.js');
+const requireAllFiles = function requireAll(requireContext) {
+  return requireContext.keys().map(requireContext);
+};
+
+//requireAllFiles(require.context('./blocks/', true, /^\.\/.*\.js$/));
+requireAllFiles(require.context('./', true, /^\.\/.*\.(js|styl|css|png)$/));
+  

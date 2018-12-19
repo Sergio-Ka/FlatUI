@@ -1,24 +1,19 @@
 .news-events
-  min-height 299px
+  min-height 16.611rem
 
 .news-events__news
   width 48.5%
-  margin-top 18px
+  margin-top 1rem
   float left
+  @media only screen and (max-width 33.556rem)
+    min-width 15.278rem
 
 .news-events__events
   width 48.4%
-  margin-top 18px
+  margin-top 1rem
   float right
-    
-@import 'news/news.styl'
-@import 'events/events.styl'
-
-@media only screen and (max-width 604px)
-  .news-events__events
+  @media only screen and (max-width 33.556rem)
     float left
-    min-width 275px
-    margin-bottom 20px
-
-  .news-events__news
-    min-width 275px
+    min-width 15.278rem
+    margin-bottom 1.111rem
+    

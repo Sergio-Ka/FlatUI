@@ -1,22 +1,24 @@
-div(class="user-profile")
+include ../header-of-block/header-of-block.pug
+
+section.user-profile
     +header-of-block("user profile")
-    div(class="user-profile__block-1")
-        div(class="profile")
-            div(class="profile__photo profile__photo_num-photo_1")
-            div(class="profile__content")
-                h2(class="profile__name profile__name_theme_light") John Smith
-                h2(class="profile__post profile__post_theme_light") ux designer
-                div(class="profile__icons")
-                    img(class="social-icon", src=require('./blocks/user-profile/profile/images/facebook.png'), alt="FaceBook")
-                    img(class="social-icon profile__social-icon-middle", src=require('./blocks/user-profile/profile/images/twitter.png'), alt="Twitter")
-                    img(class="social-icon", src=require('./blocks/user-profile/profile/images/dribbble.png'), alt="Dribbble")
-    div(class="user-profile__block-2")
-        div(class="profile")
-            div(class="profile__photo profile__photo_num-photo_2")
-            div(class="profile__content profile__content_theme_green")
-                h2(class="profile__name profile__name_theme_green") Sarah Brown
-                h2(class="profile__post profile__post_theme_green") developer
-                div(class="profile__icons")
-                    img(class="social-icon", src=require('./blocks/user-profile/profile/images/facebook-white.png'), alt="FaceBook")
-                    img(class="social-icon", src=require('./blocks/user-profile/profile/images/twitter-white.png'), alt="Twitter", class="profile__social-icon-middle")
-                    img(class="social-icon", src=require('./blocks/user-profile/profile/images/dribbble-white.png'), alt="Dribbble")
+    .user-profile__block-1
+        .profile
+            .profile__photo.profile__photo_num-photo_john-smith
+            .profile__content
+                h2.profile__name.profile__name_theme_light John Smith
+                h2.profile__post.profile__post_theme_light ux designer
+                .profile__icons
+                    img.social-icon(src=require('./blocks/user-profile/profile/images/facebook.png'), alt="FaceBook")
+                    img.social-icon.profile__social-icon-middle(src=require('./blocks/user-profile/profile/images/twitter.png'), alt="Twitter")
+                    img.social-icon(src=require('./blocks/user-profile/profile/images/dribbble.png'), alt="Dribbble")
+    .user-profile__block-2
+        .profile
+            .profile__photo.profile__photo_num-photo_sarah-brown
+            .profile__content.profile__content_theme_green
+                h2.profile__name.profile__name_theme_green Sarah Brown
+                h2.profile__post.profile__post_theme_green developer
+                .profile__icons
+                    img.social-icon(src=require('./blocks/user-profile/profile/images/facebook-white.png'), alt="FaceBook")
+                    img.social-icon(src=require('./blocks/user-profile/profile/images/twitter-white.png'), alt="Twitter", class="profile__social-icon-middle")
+                    img.social-icon(src=require('./blocks/user-profile/profile/images/dribbble-white.png'), alt="Dribbble")

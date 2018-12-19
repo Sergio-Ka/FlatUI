@@ -1,0 +1,17 @@
+include ../header-of-block/header-of-block.pug
+include percentage/percentage.pug
+include pie-chart/pie-chart.pug
+
+mixin percentage-pie-chart(options = {type:"percentage", percent:0})
+    section.percentage-pie-chart
+        +header-of-block("percentages / pie chart")
+        -options.forEach(function(item, i, arr) {
+            -if (item.type == "percentage") {
+                .percentage-pie-chart__graphics
+                    +percentage(item.percent)
+            -} else if (item.type == "pie-chart") {
+                .percentage-pie-chart__graphics
+                    +pie-chart(item.percent)
+            -}
+        -});
+        

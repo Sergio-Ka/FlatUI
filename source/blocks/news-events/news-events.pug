@@ -1,19 +1,22 @@
-div(class="news-events")
+include ../header-of-block/header-of-block.pug
+include ../standard-button/standard-button.pug
+
+section.news-events
     +header-of-block("news & events")
-    div(class="news-events__news")
-        div(class="news news_color_red")
-            div(class="news__content-block-left")
-            div(class="news__content-block-right")
-                h2(class="news__header") It's all going downhill
-                h2(class="news__date") 24 august 2013
-                p(class="news__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros. 
-    div(class="news-events__events")
-        div(class="events events_color_green")
-            div(class="events__content-block-left")
-            form(class="events__content-block-right")
-                h2(class="events__date-1") 24
-                h2(class="events__date-2") Aug
-                h2(class="events__title") this is the title
-                p(class="events__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                div(class="events__button")
-                    button(class="std-button std-button_color_green std-button_theme_events") add to calendar
+    .news-events__news
+        .news.news_color_red
+            .news__content-block-left
+            .news__content-block-right
+                h2.news__header It's all going downhill
+                h2.news__date 24 august 2013
+                p.news__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros. 
+    .news-events__events
+        .events.events_color_green
+            .events__content-block-left
+            form.events__content-block-right
+                h2.events__date-digit 24
+                h2.events__date-month Aug
+                h2.events__title this is the title
+                p.events__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .events__button
+                    +standard-button({text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"})

@@ -1,36 +1,38 @@
-div(class="form-elements")
+include ../header-of-block/header-of-block.pug
+
+section.form-elements
     +header-of-block("form elements")
-    div(class="form-elements__left-block")
-        form(class="simple-form")
-            div(class="simple-form__message simple-form__message_color_red") error
-                div(class="simple-form__message-tail simple-form__message-tail_color_red")
-            input(class="simple-form__input-text", type="text", name="your-name", value="Your Name")/
-            div(class="simple-form__message simple-form__message_color_green") thanks!
-                div(class="simple-form__message-tail simple-form__message-tail_color_green")
-            input(class="simple-form__input-text", type="text", name="your-email", value="Your Email")/
-            textarea(class="simple-form__input-textarea") Your Message
-            div(class="simple-form__button")
-                input(class="std-button std-button_color_green", type="submit", value="SUBMIT")/
-    div(class="form-elements__right-block")
+    .form-elements__left-block
+        form.simple-form
+            .simple-form__message.simple-form__message_color_red error
+                .simple-form__message-tail.simple-form__message-tail_color_red
+            input.simple-form__input-text(type="text", name="your-name", value="Your Name")/
+            .simple-form__message.simple-form__message_color_green thanks!
+                .simple-form__message-tail.simple-form__message-tail_color_green
+            input.simple-form__input-text(type="text", name="your-email", value="Your Email")/
+            textarea.simple-form__input-textarea Your Message
+            .simple-form__button
+                input.standard-button.standard-button_color_green(type="submit", value="SUBMIT")/
+    .form-elements__right-block
         +header-of-block("toggles")
-        form(class="form-elements__positioner-1")
-            div(class="form-elements__switch")
-                label(class="switch")
-                    input(class="switch__input", type="checkbox")/
-                    span(class="switch__text", data-yes="ON", data-no="OFF")
-                    span(class="switch__slider")
-            div(class="form-elements__switch")
-                label(class="switch")
-                    input(class="switch__input", type="checkbox", checked)/
-                    span(class="switch__text", data-yes="ON", data-no="OFF")
-                    span(class="switch__slider")
+        form.form-elements__positioner-upper
+            .form-elements__switch
+                label.switch
+                    input.switch__input(type="checkbox")/
+                    span.switch__text(data-yes="ON", data-no="OFF")
+                    span.switch__slider
+            .form-elements__switch
+                label.switch
+                    input.switch__input(type="checkbox", checked)/
+                    span.switch__text(data-yes="ON", data-no="OFF")
+                    span.switch__slider
         +header-of-block("tick boxes")
-        form(class="form-elements__positioner-2")
-            div(class="form-elements__tick-box")
-                input(class="tick-box-input", type="checkbox", id="c1", checked)/
+        form.form-elements__positioner-lower
+            .form-elements__tick-box
+                input.tick-box-input(type="checkbox", id="c1", checked)/
                 label(for="c1")
-                    span(class="tick-box-circle-arrow")
-            div(class="form-elements__tick-box")
-                input(class="tick-box-input", type="checkbox", id="c2")/
+                    span.tick-box-circle-arrow
+            .form-elements__tick-box
+                input.tick-box-input(type="checkbox", id="c2")/
                 label(for="c2")
-                    span(class="tick-box-circle-arrow")
+                    span.tick-box-circle-arrow

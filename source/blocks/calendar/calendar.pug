@@ -1,6 +1,8 @@
-div(class="calendar")
+include ../header-of-block/header-of-block.pug
+
+section.calendar
     +header-of-block("calendar")
-    div(class="calendar__datepicker")
-        form(class="calendar__form")
-            input(class="datepicker__digit", disabled)
-            div(class="datepicker js-datepicker")
+    .calendar__datepicker
+        form.calendar__form
+            input.datepicker__digit(disabled)
+            .datepicker.js-datepicker
