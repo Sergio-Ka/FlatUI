@@ -1,0 +1,7 @@
+mixin percentage(percent)
+    -let xcoordtext, a = percent*295/100, b = 295 - a, dasharray = a+" "+b;
+    -(percent<10 && percent>=0)?xcoordtext = "38%":xcoordtext = "25%";
+    -(percent>99)?xcoordtext = "12%":xcoordtext = "25%";
+        svg.percentage
+            circle.percentage__circle(r="45", cx="50%", cy="50%", stroke-dasharray= dasharray)
+            text.percentage__text(x= xcoordtext, y="66%")= percent

@@ -3,5 +3,5 @@ const requireAllFiles = function requireAll(requireContext) {
 };
 
 //requireAllFiles(require.context('./blocks/', true, /^\.\/.*\.js$/));
-requireAllFiles(require.context('./', true, /^\.\/.*\.(js|styl|css|png)$/));
+requireAllFiles(require.context('./', true, /^\.\/.*\.(js|styl|css|png|jpg)$/));
   

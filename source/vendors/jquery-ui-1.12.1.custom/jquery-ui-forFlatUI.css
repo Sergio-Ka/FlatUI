@@ -102,7 +102,7 @@
   content: "";
   width: 11.5%;
   height: 100%;
-  background: #4EB7A8 url(../../../source/blocks/search-drop-down/selectmenu/images/arrow-down.png) 8px 10px no-repeat;
+  background: #4EB7A8 url(../../../source/blocks/selectmenu/images/arrow-down.png) 40% 10px no-repeat;
   color: #FFFFFF;
   position: absolute;
   top: 0px;
@@ -144,7 +144,6 @@
 }
 
 .ui-button {
-  width: 91.4%;
   background: #E5E5E5;
   font-weight: normal;
   color: #888888;
@@ -155,19 +154,6 @@
   position: relative;
   cursor: pointer;
   vertical-align: middle;
-}
-
-@media only screen and (max-width: 604px) {
-  .ui-button {
-    margin-left: 10px;
-    width: 95.4%;
-  }
-}
-
-@media only screen and (max-width: 410px) {
-  .ui-button {
-    width: 90%;
-  }
 }
 
 .ui-menu {

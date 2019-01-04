@@ -1,34 +1,42 @@
 .form-elements
-  min-height 18.5rem
 
-.form-elements__left-block
-  float left
-  width 48.35%
-  margin-top 1.889rem
-  @media only screen and (max-width 33.556rem)
-    float left
-    width 95%
-    padding 2.5%
+  &__container
+    display flex
+    flex-wrap wrap
+  
+  &__form
+    flex-basis 48.5%
+    margin 1.9rem 0 2.65rem 0
 
-.form-elements__right-block
-  float right
-  width 48%
-  text-align center
-  margin-top 0.833rem
-  @media only screen and (max-width 33.556rem)
-    float left
-    width 95%
-    padding 2.5%
+    @media only screen and (max-width 38rem)
+      flex-basis 100%
+      margin 0
 
-.form-elements__positioner-upper
-  padding 0.889rem 0 1rem 0
+  &__toggles-tick-boxes
+    flex-basis 44%
+    margin 0.85rem 0 0 2.1rem
 
-.form-elements__positioner-lower
-  padding 0.889rem 0 0 0.611rem
+    @media only screen and (max-width 38rem)
+      flex-basis 100%
+      margin 0
 
-.form-elements__switch
-  display inline-block
-  margin 0 0.389rem 0 0.444rem
+  &__toggles
+    margin 1.65rem 0 1.85rem 2.8rem
 
-.form-elements__tick-box
-  display inline-block
+    @media only screen and (max-width 38rem)
+      margin 0 auto
+      max-width 9rem
+
+  &__tick-boxes
+    margin 1.65rem 0 1.85rem 5.1rem
+
+    @media only screen and (max-width 38rem)
+      margin 0 auto
+      max-width 4.5rem
+
+  &__switch
+    display inline-block
+    margin 0 0.389rem 0 0.444rem
+
+  &__tick-box
+    display inline-block

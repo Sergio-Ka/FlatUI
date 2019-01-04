@@ -80,64 +80,65 @@ requireAllFiles(__webpack_require__(1));
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./blocks/arrow-buttons/arrow-button/arrow-button.styl": 2,
+	"./blocks/arrow-button/arrow-button.styl": 2,
 	"./blocks/arrow-buttons/arrow-buttons.styl": 3,
 	"./blocks/calendar/calendar.styl": 4,
-	"./blocks/calendar/datepicker/datepicker.js": 5,
-	"./blocks/calendar/datepicker/datepicker.styl": 6,
-	"./blocks/form-elements/form-elements.styl": 7,
-	"./blocks/form-elements/simple-form/simple-form.styl": 8,
-	"./blocks/form-elements/tick-box/images/tick-boxes.png": 9,
-	"./blocks/form-elements/tick-box/tick-box.styl": 10,
-	"./blocks/form-elements/toggle-switch/toggle-switch.styl": 11,
-	"./blocks/header-of-block/header-of-block.styl": 12,
-	"./blocks/location/location.styl": 13,
-	"./blocks/location/map/images/icon-1.png": 14,
-	"./blocks/location/map/images/icon-2.png": 15,
-	"./blocks/location/map/map.styl": 16,
-	"./blocks/messaging/chat/chat.styl": 17,
-	"./blocks/messaging/chat/images/icon-3.png": 19,
-	"./blocks/messaging/chat/images/photo-sarah-brown.png": 18,
-	"./blocks/messaging/messaging.styl": 20,
-	"./blocks/news-events/events/events.styl": 21,
-	"./blocks/news-events/events/images/events-photo.png": 22,
-	"./blocks/news-events/news-events.styl": 23,
-	"./blocks/news-events/news/images/news-photo.png": 24,
-	"./blocks/news-events/news/news.styl": 25,
-	"./blocks/percentage-pie-chart/percentage-pie-chart.styl": 26,
-	"./blocks/percentage-pie-chart/percentage/percentage.styl": 27,
-	"./blocks/percentage-pie-chart/pie-chart/pie-chart.styl": 28,
-	"./blocks/search-drop-down/search-drop-down.styl": 29,
-	"./blocks/search-drop-down/search-form/images/mag-glass.png": 30,
-	"./blocks/search-drop-down/search-form/search-form.styl": 31,
-	"./blocks/search-drop-down/selectmenu/images/arrow-down.png": 32,
-	"./blocks/search-drop-down/selectmenu/selectmenu.js": 33,
-	"./blocks/sliders/slider-discrete/slider-discrete.js": 34,
-	"./blocks/sliders/slider-discrete/slider-discrete.styl": 35,
-	"./blocks/sliders/slider-with-pop-up/slider-with-pop-up.js": 36,
-	"./blocks/sliders/slider-with-pop-up/slider-with-pop-up.styl": 37,
-	"./blocks/sliders/sliders.styl": 38,
-	"./blocks/stages/stage/stage.styl": 39,
-	"./blocks/stages/stages.styl": 40,
-	"./blocks/standard-button/standard-button.styl": 41,
-	"./blocks/standard-buttons/standard-buttons.styl": 42,
-	"./blocks/user-profile/profile/images/dribbble-white.png": 43,
-	"./blocks/user-profile/profile/images/dribbble.png": 44,
-	"./blocks/user-profile/profile/images/facebook-white.png": 45,
-	"./blocks/user-profile/profile/images/facebook.png": 46,
-	"./blocks/user-profile/profile/images/photo-john-smith.png": 47,
-	"./blocks/user-profile/profile/images/twitter-white.png": 48,
-	"./blocks/user-profile/profile/images/twitter.png": 49,
-	"./blocks/user-profile/profile/profile.styl": 50,
-	"./blocks/user-profile/user-profile.styl": 51,
-	"./blocks/video/video-frame/video-frame.styl": 52,
-	"./blocks/video/video.styl": 53,
-	"./blocks/wrap/wrap.styl": 54,
+	"./blocks/chat/chat.styl": 5,
+	"./blocks/chat/images/icon-3.png": 6,
+	"./blocks/chat/images/photo-sarah-brown.png": 7,
+	"./blocks/datepicker/datepicker.js": 8,
+	"./blocks/datepicker/datepicker.styl": 9,
+	"./blocks/events/events.styl": 10,
+	"./blocks/events/images/events-photo.png": 11,
+	"./blocks/form-elements/form-elements.styl": 12,
+	"./blocks/header-of-block/header-of-block.styl": 13,
+	"./blocks/location/location.styl": 14,
+	"./blocks/map/images/icon-1.png": 15,
+	"./blocks/map/images/icon-2.png": 16,
+	"./blocks/map/map.styl": 17,
+	"./blocks/messaging/messaging.styl": 18,
+	"./blocks/news-events/news-events.styl": 19,
+	"./blocks/news/images/news-photo.png": 20,
+	"./blocks/news/news.styl": 21,
+	"./blocks/percentage-pie-chart/percentage-pie-chart.styl": 22,
+	"./blocks/percentage/percentage.styl": 23,
+	"./blocks/pie-chart/pie-chart.styl": 24,
+	"./blocks/profile/images/dribbble-white.png": 25,
+	"./blocks/profile/images/dribbble.png": 26,
+	"./blocks/profile/images/facebook-white.png": 27,
+	"./blocks/profile/images/facebook.png": 28,
+	"./blocks/profile/images/photo-john-smith.png": 29,
+	"./blocks/profile/images/photo-sarah-brown.png": 30,
+	"./blocks/profile/images/twitter-white.png": 31,
+	"./blocks/profile/images/twitter.png": 32,
+	"./blocks/profile/profile.styl": 33,
+	"./blocks/search-drop-down/search-drop-down.styl": 34,
+	"./blocks/search-form/images/mag-glass.png": 35,
+	"./blocks/search-form/search-form.styl": 36,
+	"./blocks/selectmenu/images/arrow-down.png": 37,
+	"./blocks/selectmenu/selectmenu.js": 38,
+	"./blocks/simple-form/simple-form.styl": 39,
+	"./blocks/slider-discrete/slider-discrete.js": 40,
+	"./blocks/slider-discrete/slider-discrete.styl": 41,
+	"./blocks/slider-with-pop-up/slider-with-pop-up.js": 42,
+	"./blocks/slider-with-pop-up/slider-with-pop-up.styl": 43,
+	"./blocks/sliders/sliders.styl": 44,
+	"./blocks/stage/stage.styl": 45,
+	"./blocks/stages/stages.styl": 46,
+	"./blocks/standard-button/standard-button.styl": 47,
+	"./blocks/standard-buttons/standard-buttons.styl": 48,
+	"./blocks/tick-box/images/tick-boxes.png": 49,
+	"./blocks/tick-box/tick-box.styl": 50,
+	"./blocks/toggle-switch/toggle-switch.styl": 51,
+	"./blocks/user-profile/user-profile.styl": 52,
+	"./blocks/video-frame/video-frame.styl": 53,
+	"./blocks/video/video.styl": 54,
+	"./blocks/wrap/wrap.styl": 55,
 	"./index.js": 0,
-	"./index.styl": 55,
-	"./vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js": 56,
-	"./vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css": 57,
-	"./vendors/jquery-ui-1.12.1.custom/jquery-ui.js": 58
+	"./index.styl": 56,
+	"./vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js": 57,
+	"./vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css": 58,
+	"./vendors/jquery-ui-1.12.1.custom/jquery-ui.js": 59
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -177,32 +178,32 @@ webpackContext.id = 1;
 /* 5 */
 /***/ (function(module, exports) {
 
-var $calendar = $( ".js-datepicker" );
-$calendar.datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/icon-3.png";
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+var $calendar = $( ".js-datepicker__body" );
+$calendar.datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/tick-boxes.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 10 */
@@ -212,9 +213,9 @@ module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 11 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/events-photo.png";
 
 /***/ }),
 /* 12 */
@@ -230,21 +231,21 @@ module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 14 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/icon-1.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-2.png";
+module.exports = __webpack_require__.p + "images/icon-1.png";
 
 /***/ }),
 /* 16 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/icon-2.png";
 
 /***/ }),
 /* 17 */
@@ -254,21 +255,21 @@ module.exports = __webpack_require__.p + "images/icon-2.png";
 
 /***/ }),
 /* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-3.png";
-
-/***/ }),
-/* 20 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/news-photo.png";
 
 /***/ }),
 /* 21 */
@@ -278,9 +279,9 @@ module.exports = __webpack_require__.p + "images/icon-3.png";
 
 /***/ }),
 /* 22 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/events-photo.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 23 */
@@ -290,67 +291,103 @@ module.exports = __webpack_require__.p + "images/events-photo.png";
 
 /***/ }),
 /* 24 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/news-photo.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 25 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/dribbble-white.png";
 
 /***/ }),
 /* 26 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/dribbble.png";
 
 /***/ }),
 /* 27 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/facebook-white.png";
 
 /***/ }),
 /* 28 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/facebook.png";
 
 /***/ }),
 /* 29 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/photo-john-smith.png";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/mag-glass.png";
+module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
 
 /***/ }),
 /* 31 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/twitter-white.png";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/arrow-down.png";
+module.exports = __webpack_require__.p + "images/twitter.png";
 
 /***/ }),
 /* 33 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/mag-glass.png";
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/arrow-down.png";
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports) {
 
 $selectmenu = $(".js-selectmenu");
 $selectmenu.selectmenu();
 
 /***/ }),
-/* 34 */
+/* 39 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports) {
 
 let $sliderDiscrete = $(".js-slider-discrete");
@@ -375,13 +412,13 @@ $('.js-slider-discrete .ui-slider-range-min').each(function (index, handle) {
 });
 
 /***/ }),
-/* 35 */
+/* 41 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 36 */
+/* 42 */
 /***/ (function(module, exports) {
 
 let $sliderWithPopUp = $('.js-slider-with-pop-up');
@@ -400,82 +437,46 @@ $sliderWithPopUp.slider({
 });
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
 /* 43 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/dribbble-white.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 44 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/dribbble.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 45 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/facebook-white.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 46 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/facebook.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 47 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/photo-john-smith.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 48 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/twitter-white.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/twitter.png";
+module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 50 */
@@ -515,6 +516,12 @@ module.exports = __webpack_require__.p + "images/twitter.png";
 
 /***/ }),
 /* 56 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11529,13 +11536,13 @@ return jQuery;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery UI - v1.12.1 - 2017-12-21

@@ -1,0 +1,91 @@
+.chat
+
+  &__name
+    position relative
+    background #4EB7A8
+    color #FFFFFF
+    min-height 2.611rem
+    font-size 1.8rem
+    text-align center
+    letter-spacing -0.1rem
+    padding 0.944rem 1rem 1rem 1rem
+    border-top-left-radius 0.167rem
+    border-top-right-radius 0.167rem
+    word-break break-all
+
+  &__header-lower-block
+    background #46AB9D
+    min-height 1.889rem
+
+  &__photo
+    position absolute
+    top 3.889rem
+    left 32.6%
+    width 4.778rem
+    min-height 4.778rem
+    border-radius 50%
+    border 0.222rem solid #E5E5E5
+    background-position -0.278rem -0.389rem
+    background-repeat no-repeat
+
+  &__body
+    background #F2F2F2
+    min-height 13.889rem
+    border-bottom-left-radius 0.167rem
+    border-bottom-right-radius 0.167rem
+    padding-top 3.444rem
+
+  &__icon
+    position absolute
+    width 1.389rem
+    min-height 1.222rem
+    background url(images/icon-3.png) 0 0 no-repeat
+
+    &_left
+      left 9.5%
+      top 7.667rem
+
+    &_right
+      background-position 97% 0
+      left 81.7%
+      top 7.611rem
+
+  &__message
+    position relative
+    background #FFFFFF
+    color #868686
+    width 11.056rem
+    min-height 2.778rem
+    border-radius 0.278rem
+    margin 0 auto
+    padding 0.944rem 1.389rem 0 1.111rem
+    font-size 0.7rem
+    letter-spacing 0.04rem
+    word-break break-all
+
+    &:before
+
+      @media only screen and (max-width 33.556rem)
+        top 12.889rem
+
+    &-tail
+      content ''
+      border 0.389rem solid transparent
+      border-bottom 0.389rem solid #FFFFFF
+      position absolute
+      left 6.056rem
+      top -0.722rem
+
+  &__input
+    display block
+    width 11.111rem
+    min-height 3.667rem
+    border 0.222rem solid #FFFFFF
+    border-radius 0.278rem
+    margin 1.056rem auto 0
+    background #E5E5E5
+    color #868686
+    font-family 'Lato', Sans-Serif
+    font-size 0.7rem
+    letter-spacing 0.04rem
+    padding 0.778rem 1.111rem 0 0.889rem

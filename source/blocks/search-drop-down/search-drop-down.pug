@@ -1,19 +1,13 @@
 include ../header-of-block/header-of-block.pug
+include ../search-form/search-form.pug
+include ../selectmenu/selectmenu.pug
 
-section.search-drop-down
-    +header-of-block("search / drop down")
-    .search-drop-down__search-success
-        form.search
-            input.search__input(type="search", placeholder="Search", name="keywords")
-            input.search__button(type="submit", value="")/
-    .search-drop-down__search-unsuccess
-        form.search
-            input.search__input.search__input_color_red(type="search", placeholder="I've not found what I'm looking for...", name="keywords")
-            input.search__button(type="submit", value="")/
-    form.search-drop-down__selectmenu-form
-        select.selectmenu.js-selectmenu
-            option.selectmenu__item(selected="selected") Choose An Option
-            option.selectmenu__item Option 1
-            option.selectmenu__item Option 2
-            option.selectmenu__item Option 3
-            option.selectmenu__item Option 4
+mixin search-drop-down()
+    section.search-drop-down
+        +header-of-block("search / drop down")
+        .search-drop-down__search-success
+            +search-form({placeholder:"Search", errorStatus:false})
+        .search-drop-down__search-unsuccess
+            +search-form({placeholder:"I've not found what I'm looking for...", errorStatus:true})
+        form.search-drop-down__selectmenu-form
+            +selectmenu({selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]})

@@ -4,6 +4,13 @@ include ../percentage-pie-chart/percentage-pie-chart.pug
 include ../video/video.pug
 include ../sliders/sliders.pug
 include ../stages/stages.pug
+include ../form-elements/form-elements.pug
+include ../search-drop-down/search-drop-down.pug
+include ../user-profile/user-profile.pug
+include ../news-events/news-events.pug
+include ../location/location.pug
+include ../calendar/calendar.pug
+include ../messaging/messaging.pug
 
 mixin wrap()
     .wrap
@@ -18,15 +25,13 @@ mixin wrap()
                             {text:"button", color:"green", size:"small", effect:"", activeStatus:"inactive", theme:""},
                             {text:"button", color:"green", size:"", effect:"", activeStatus:"inactive", theme:""},
                             {text:"button", color:"red", size:"", effect:"", activeStatus:"inactive", theme:""},
-                            {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive", theme:""}
-                        ])
+                            {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive", theme:""}])
         +arrow-buttons([{direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"},
                         {direction:"right", arrowColor:"#4EB7A8", buttonColor:"white"},
                         {direction:"left", arrowColor:"#FFFFFF", buttonColor:"gray"},
                         {direction:"right", arrowColor:"#FFFFFF", buttonColor:"gray"},
                         {direction:"left", arrowColor:"#FFFFFF", buttonColor:"green"},
-                        {direction:"right", arrowColor:"#FFFFFF", buttonColor:"green"}
-                    ])
+                        {direction:"right", arrowColor:"#FFFFFF", buttonColor:"green"}])
         +percentage-pie-chart([{type:"percentage", percent:0},
                                 {type:"percentage", percent:38},
                                 {type:"percentage", percent:62},
@@ -34,20 +39,20 @@ mixin wrap()
                                 {type:"pie-chart", percent:[{color:"#E5E5E5", percent:33},
                                                             {color:"#747474", percent:11},
                                                             {color:"#4EB7A8", percent:26},
-                                                            {color:"#E75735", percent:30}]}
-                            ])
+                                                            {color:"#E75735", percent:30}]}])
         +sliders()
         +stages({markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735", colorOfInactiveStage:"#E5E5E5", textColor:"#FFFFFF", inactiveTextColor:"#888888"})
-        include ../form-elements/form-elements.pug
-        .wrap__positioner-upper
-            include ../search-drop-down/search-drop-down.pug
-            include ../user-profile/user-profile.pug
-        include ../news-events/news-events.pug
-        include ../location/location.pug
-        .wrap__positioner-lower
-            include ../calendar/calendar.pug
-            include ../messaging/messaging.pug
-        +video({link:"https://player.vimeo.com/video/62980495?color=e75735&portrait=0"})
+        +form-elements()
+        .wrap__positioner
+            +search-drop-down()
+            +user-profile([{photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith", profession: "ux designer", theme: "light", iconsTheme: "dark"},
+                            {photo: "images/photo-sarah-brown.png", photoPosition:"-0.444rem -0.444rem", name: "Sarah Brown", profession: "developer", theme: "green", iconsTheme: "light"}])
+        +news-events()
+        +location({invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca", link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.379727947122!2d-122.4220465!3d37.7936737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858092e7ee4833%3A0xba9adf323eff9155!2s1259+California+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2sru!4v1513867048557"})
+        .wrap__positioner
+            +calendar()
+            +messaging({name: "Sarah Brown", photo: "images/photo-sarah-brown.png", message: "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder: "Yeah that sounds great. See you then.", button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}})
+        +video({link:"https://player.vimeo.com/video/62980495", color: "E75735"})
 
         script(src="./vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js")
         script(src="./vendors/jquery-ui-1.12.1.custom/jquery-ui.js")

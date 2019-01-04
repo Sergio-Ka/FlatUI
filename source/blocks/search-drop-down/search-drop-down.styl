@@ -1,15 +1,30 @@
 .search-drop-down
   float left
   width 48.5%
+  padding-bottom 11.05rem
+
   @media only screen and (max-width 33.556rem)
     width 95%
-  &__search-success
-    margin 1.111rem 0 0.889rem
+    padding-bottom 0
+
+  &__search
+
+    &-success
+      margin 1.111rem 0 0.889rem
+      width 100%
+
+      @media only screen and (max-width 33.556rem)
+        margin 0.556rem
+
+    &-unsuccess
+      margin 0 0 0.444rem
+      width 100%
+
+      @media only screen and (max-width 33.556rem)
+        margin 0.556rem
+  
+  &__selectmenu-form
     width 100%
+
     @media only screen and (max-width 33.556rem)
-      margin 0.556rem
-  &__search-unsuccess
-    margin 0 0 0.444rem
-    width 100%
-    @media only screen and (max-width 33.556rem)
-      margin 0.556rem
+      margin 0 0 0 0.556rem

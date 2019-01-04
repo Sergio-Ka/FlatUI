@@ -1,7 +1,7 @@
 include ../header-of-block/header-of-block.pug
-include video-frame/video-frame.pug
+include ../video-frame/video-frame.pug
 
-mixin video(option)
+mixin video(options)
     section.video
         +header-of-block("video")
-        +video-frame(option)
+        +video-frame(options)

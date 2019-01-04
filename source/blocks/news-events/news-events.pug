@@ -1,22 +1,11 @@
 include ../header-of-block/header-of-block.pug
-include ../standard-button/standard-button.pug
+include ../news/news.pug
+include ../events/events.pug
 
-section.news-events
-    +header-of-block("news & events")
-    .news-events__news
-        .news.news_color_red
-            .news__content-block-left
-            .news__content-block-right
-                h2.news__header It's all going downhill
-                h2.news__date 24 august 2013
-                p.news__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros. 
-    .news-events__events
-        .events.events_color_green
-            .events__content-block-left
-            form.events__content-block-right
-                h2.events__date-digit 24
-                h2.events__date-month Aug
-                h2.events__title this is the title
-                p.events__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                .events__button
-                    +standard-button({text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"})
+mixin news-events()
+    section.news-events
+        +header-of-block("news & events")
+        .news-events__news
+            +news({image:"images/news-photo.png", header: "It's all going downhill", date: "24 august 2013", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."})
+        .news-events__events
+            +events({image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}})

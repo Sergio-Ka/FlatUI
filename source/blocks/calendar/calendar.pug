@@ -1,8 +1,8 @@
 include ../header-of-block/header-of-block.pug
+include ../datepicker/datepicker.pug
 
-section.calendar
-    +header-of-block("calendar")
-    .calendar__datepicker
-        form.calendar__form
-            input.datepicker__digit(disabled)
-            .datepicker.js-datepicker
+mixin calendar()
+    section.calendar
+        +header-of-block("calendar")
+        .calendar__datepicker
+            +datepicker()

@@ -39,7 +39,7 @@ module.exports = {
         loader: 'file-loader?name=fonts/[name].[ext]'
       },
       {
-        test: /\.(png|ico)$/,
+        test: /\.(png|ico|jpg)$/,
         loader: 'file-loader?name=images/[name].[ext]'
       }
     ]
