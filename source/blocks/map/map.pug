@@ -6,7 +6,8 @@ mixin map(options = {invite: "Meet us!", localAdress: "1259 california st", glob
             .map__invite= invite
             .map__adress= localAdress 
                 br/= globalAdress
-            .map__icon
-                img.icon-image(src=require('./blocks/map/images/icon-2.png'), alt="you are here")
-            .map__icon.map__icon_first
-                img.icon-image(src=require('./blocks/map/images/icon-1.png'), alt="you are here")
+            .map__icons
+                .map__icon
+                    img.icon-image(src=require('./blocks/map/images/icon-2.png'), alt="you are here")
+                .map__icon.map__icon_first
+                    img.icon-image(src=require('./blocks/map/images/icon-1.png'), alt="you are here")

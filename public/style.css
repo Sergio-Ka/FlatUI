@@ -21,26 +21,22 @@
   color: #4eb7a8;
   border: 0.167rem solid #4eb7a8;
 }
-.arrow-buttons {
-  padding-bottom: 1.6625rem;
-}
 .arrow-buttons__positioner {
-  margin: 1.944rem 0 0 4.111rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 1.85rem 4.111rem;
 }
 .arrow-buttons__arrow-button {
-  display: inline;
-  margin: 1.277rem 0.667rem 0.667rem 0.667rem;
+  margin: 1.1rem 0.667rem 0.667rem 0.667rem;
 }
 .calendar {
   float: left;
 }
 .calendar__datepicker {
-  padding-top: 0.556rem;
+  padding: 0.556rem 0 2.95rem 0;
   width: 15.5rem;
-  margin-bottom: 2.95rem;
 }
 .chat__name {
-  position: relative;
   background: #4eb7a8;
   color: #fff;
   min-height: 2.611rem;
@@ -50,17 +46,17 @@
   padding: 0.944rem 1rem 1rem 1rem;
   border-top-left-radius: 0.167rem;
   border-top-right-radius: 0.167rem;
-  word-break: break-all;
 }
 .chat__header-lower-block {
+  position: relative;
   background: #46ab9d;
-  min-height: 1.889rem;
+  min-height: 1.9rem;
 }
 .chat__photo {
   position: absolute;
-  top: 3.889rem;
-  left: 32.6%;
-  width: 4.778rem;
+  top: -0.7rem;
+  left: calc(50% - 2.8rem);
+  min-width: 4.778rem;
   min-height: 4.778rem;
   border-radius: 50%;
   border: 0.222rem solid #e5e5e5;
@@ -69,71 +65,68 @@
 }
 .chat__body {
   background: #f2f2f2;
-  min-height: 13.889rem;
   border-bottom-left-radius: 0.167rem;
   border-bottom-right-radius: 0.167rem;
-  padding-top: 3.444rem;
+  padding: 0 1.25rem 0.6rem 1.25rem;
+}
+.chat__icons {
+  min-height: 1.2rem;
+  padding: 1.15rem 0.25rem 1rem 0.25rem;
 }
 .chat__icon {
-  position: absolute;
   width: 1.389rem;
-  min-height: 1.222rem;
+  min-height: 1.2rem;
   background: url(images/icon-3.png) 0 0 no-repeat;
 }
 .chat__icon_left {
-  left: 9.5%;
-  top: 7.667rem;
+  float: left;
 }
 .chat__icon_right {
+  float: right;
   background-position: 97% 0;
-  left: 81.7%;
-  top: 7.611rem;
 }
 .chat__message {
   position: relative;
   background: #fff;
   color: #868686;
-  width: 11.056rem;
-  min-height: 2.778rem;
+  min-height: 2.96rem;
   border-radius: 0.278rem;
-  margin: 0 auto;
   padding: 0.944rem 1.389rem 0 1.111rem;
   font-size: 0.7rem;
   letter-spacing: 0.04rem;
-  word-break: break-all;
-}
-@media only screen and (max-width: 33.556rem) {
-  .chat__message:before {
-    top: 12.889rem;
-  }
 }
 .chat__message-tail {
+  position: absolute;
   content: '';
   border: 0.389rem solid transparent;
   border-bottom: 0.389rem solid #fff;
-  position: absolute;
-  left: 6.056rem;
+  left: calc(50% - 0.7rem);
   top: -0.722rem;
 }
 .chat__input {
   display: block;
-  width: 11.111rem;
-  min-height: 3.667rem;
+  width: 100%;
+  min-height: 4.9rem;
   border: 0.222rem solid #fff;
   border-radius: 0.278rem;
-  margin: 1.056rem auto 0;
+  margin: 0.95rem 0 0;
   background: #e5e5e5;
   color: #868686;
   font-family: 'Lato', Sans-Serif;
   font-size: 0.7rem;
   letter-spacing: 0.04rem;
   padding: 0.778rem 1.111rem 0 0.889rem;
+  box-sizing: border-box;
+}
+.chat__button {
+  margin: 0.833rem 0;
+  padding: 0 0 0 calc(50% - 6.78rem);
 }
 .datepicker__digit {
-  font-family: 'Lato', Sans-Serif;
   width: 67%;
   background: #e75735;
   color: #fff;
+  font-family: 'Lato', Sans-Serif;
   font-size: 4.5rem;
   font-weight: normal;
   padding: 0.35rem 0 0.25rem 33.1%;
@@ -263,7 +256,7 @@
   }
 }
 .location__content {
-  margin: 0 0 1.85rem 0;
+  margin: 1.6rem 0 1.95rem 0;
 }
 .map {
   display: flex;
@@ -273,9 +266,9 @@
   width: 100%;
   min-height: 11.278rem;
   border: none;
-  padding-top: 0.889rem;
 }
 .map__legend {
+  display: flex;
   background: #e75735;
   color: #fff;
   width: 100%;
@@ -283,36 +276,53 @@
   border-bottom-right-radius: 0.167rem;
   border-bottom-left-radius: 0.167rem;
 }
-@media only screen and (max-width: 22.778rem) {
-  .map__legend {
-    height: 6rem;
+.map__invite {
+  font-size: 1.6rem;
+  flex-basis: 27.5%;
+  padding: 0.8rem 0.6rem 0 1.6rem;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 27rem) {
+  .map__invite {
+    flex-basis: 42%;
   }
 }
-.map__invite {
-  float: left;
-  padding-top: 0.833rem;
-  padding-left: 1.611rem;
-  width: 7.5rem;
-  font-size: 1.6rem;
-}
 .map__adress {
-  float: left;
-  padding-top: 1.056rem;
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.067rem;
   text-transform: uppercase;
+  flex-basis: 56.5%;
+  padding: 1rem 0 0 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 27rem) {
+  .map__adress {
+    flex-basis: 42%;
+  }
+}
+.map__icons {
+  flex-basis: 16%;
 }
 .map__icon {
   float: right;
   padding: 1.222rem 1.444rem 0 0;
 }
-.map__icon_first {
+@media only screen and (max-width: 27rem) {
+  .map__icon {
+    padding: 1.222rem 0.7rem 0 0;
+  }
+}
+.map__icon:nth-child(2) {
   padding: 1.167rem 1.222rem 0 0;
+}
+@media only screen and (max-width: 27rem) {
+  .map__icon:nth-child(2) {
+    padding: 1.167rem 0.5rem 0 0;
+  }
 }
 .messaging {
   float: right;
-  min-width: 16rem;
 }
 @media only screen and (max-width: 37.5rem) {
   .messaging {
@@ -321,6 +331,12 @@
 }
 .messaging__container {
   padding-top: 0.556rem;
+  max-width: 16rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .messaging__container {
+    max-width: 15rem;
+  }
 }
 .news-events {
   min-height: 16.611rem;
@@ -333,6 +349,7 @@
 @media only screen and (max-width: 33.556rem) {
   .news-events__news {
     min-width: 15.278rem;
+    margin: 1rem;
   }
 }
 .news-events__events {
@@ -344,7 +361,7 @@
   .news-events__events {
     float: left;
     min-width: 15.278rem;
-    margin-bottom: 1.111rem;
+    margin: 1rem;
   }
 }
 .news {
@@ -664,6 +681,7 @@
 .slider-discrete__scale {
   min-width: 14.444rem;
   padding-top: 0.167rem;
+  word-break: keep-all;
 }
 .slider-discrete__digit-zero {
   display: inline-block;
@@ -716,7 +734,7 @@
   width: 14.444rem;
   padding: 1.722rem 0.278rem 0.833rem 1.778rem;
 }
-@media only screen and (max-width: 33.556rem) {
+@media only screen and (max-width: 38rem) {
   .sliders__right-column {
     padding: 2.222rem 0.556rem 1.111rem;
     float: left;
@@ -727,7 +745,7 @@
   width: 14.444rem;
   padding: 1.722rem 2.056rem 2.222rem 0;
 }
-@media only screen and (max-width: 33.556rem) {
+@media only screen and (max-width: 38rem) {
   .sliders__left-column {
     padding: 2.222rem 0.556rem 1.111rem;
   }
@@ -757,8 +775,8 @@
   }
 }
 .standard-button {
-  width: 6.556rem;
-  height: 1.944rem;
+  min-width: 6.556rem;
+  min-height: 1.944rem;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -788,7 +806,7 @@
   border-bottom: 0.222rem solid #bf3f1f;
 }
 .standard-button_ripple-effect {
-  height: 1.778rem;
+  min-height: 1.778rem;
   position: relative;
   overflow: hidden;
   border: none;
@@ -808,8 +826,8 @@
   animation: ripple 0.8s ease-out;
 }
 .standard-button_size_small {
-  width: 4.333rem;
-  height: 1.222rem;
+  min-width: 4.333rem;
+  min-height: 1.222rem;
   font-size: 0.48rem;
   letter-spacing: 0.08rem;
   font-weight: bold;
@@ -820,8 +838,8 @@
   color: #4eb7a8;
   font-size: 0.6rem;
   letter-spacing: 0.03rem;
-  width: 7.111rem;
-  height: 1.444rem;
+  min-width: 7.111rem;
+  min-height: 1.444rem;
   margin: 1.056rem 0.5rem 1.333rem;
 }
 .standard-button_theme_chat {
@@ -829,7 +847,6 @@
   font-family: 'Lato', Sans-Serif;
   width: 13.556rem;
   height: 1.944rem;
-  margin: 0.833rem auto;
 }
 @-moz-keyframes ripple {
   0% {
@@ -1003,23 +1020,23 @@
 @media only screen and (max-width: 33.556rem) {
   .user-profile__block:nth-child(2),
   .user-profile__block:nth-child(3) {
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 }
 .video-frame {
   width: 100%;
-  height: 18.778rem;
+  min-height: 18.8rem;
   border: 0;
-  padding-top: 0.389rem;
 }
-.video {
-  min-height: 26.778rem;
+.video__content {
+  padding-top: 0.45rem;
 }
 .wrap {
   width: 100%;
   max-width: 33rem;
   min-height: 176.444rem;
   margin: 0 auto;
+  word-break: break-all;
 }
 @font-face {
   font-family: 'Lato';

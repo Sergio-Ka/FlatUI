@@ -4,12 +4,14 @@ mixin chat(options = {name: "Sarah Brown", photo: "images/photo-sarah-brown.png"
     -let {name = "Sarah Brown", photo = "images/photo-sarah-brown.png", message = "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder = "Yeah that sounds great. See you then.", button = {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}} = options;
     form.chat
         .chat__name= name
-            .chat__photo(style=`background-image: url(${photo});`)
-            .chat__icon.chat__icon_left
-            .chat__icon.chat__icon_right
         .chat__header-lower-block
+            .chat__photo(style=`background-image: url(${photo});`)
         .chat__body
+            .chat__icons
+                .chat__icon.chat__icon_left
+                .chat__icon.chat__icon_right
             .chat__message= message
                 .chat__message-tail
             textarea.chat__input= inputPlaceholder
-            +standard-button(button)
+            .chat__button
+                +standard-button(button)

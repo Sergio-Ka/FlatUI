@@ -4,4 +4,5 @@ include ../video-frame/video-frame.pug
 mixin video(options)
     section.video
         +header-of-block("video")
-        +video-frame(options)
+        .video__content
+            +video-frame(options)
