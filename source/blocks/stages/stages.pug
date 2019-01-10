@@ -1,8 +1,9 @@
 include ../header-of-block/header-of-block.pug
 include ../stage/stage.pug
 
-mixin stages(option)
+mixin stages(options = {header: "stages", stages: {}})
+    -let {header = "stages", stages = {}} = options;
     section.stages
-        +header-of-block("stages")
+        +header-of-block(header)
         .stages__graphics
-            +stage(option)
+            +stage(stages)

@@ -3,22 +3,23 @@ include ../simple-form/simple-form.pug
 include ../toggle-switch/toggle-switch.pug
 include ../tick-box/tick-box.pug
 
-mixin form-elements()
+mixin form-elements(options = {headerOfFormElementsBlock: "form elements", headerOfTogglesBlock: "toggles", headerOfTickBlock: "tick boxes", toggles: [{checked: false}, {checked: true}], ticks: [{checked: true, id: "c1"}, {checked: false, id: "c2"}]})
+    -let {headerOfFormElementsBlock = "form elements", headerOfTogglesBlock = "toggles", headerOfTickBlock = "tick boxes", toggles = [], ticks = []} = options;
     section.form-elements
-        +header-of-block("form elements")
+        +header-of-block(headerOfFormElementsBlock)
         .form-elements__container
             .form-elements__form
                 +simple-form()
             form.form-elements__toggles-tick-boxes
-                +header-of-block("toggles")
+                +header-of-block(headerOfTogglesBlock)
                 .form-elements__toggles
-                    .form-elements__switch
-                        +toggle-switch({checked: false})
-                    .form-elements__switch
-                        +toggle-switch({checked: true})
-                +header-of-block("tick boxes")
+                    -toggles.forEach(function (item, i, arr) {
+                        .form-elements__switch
+                            +toggle-switch({checked: item.checked})
+                    -})
+                +header-of-block(headerOfTickBlock)
                 .form-elements__tick-boxes
-                    .form-elements__tick-box
-                        +tick-box({checked: true, id: "c1"})
-                    .form-elements__tick-box
-                        +tick-box({checked: false, id: "c2"})
+                    -ticks.forEach(function (item, i, arr) {
+                        .form-elements__tick-box
+                            +tick-box({checked: item.checked, id: item.id})
+                    -})

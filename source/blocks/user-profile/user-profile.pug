@@ -1,10 +1,11 @@
 include ../header-of-block/header-of-block.pug
 include ../profile/profile.pug
 
-mixin user-profile(options = [{photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith", profession: "ux designer", theme: "light", iconsTheme: "dark"}])
+mixin user-profile(options = {header: "user profile", profiles: [{photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith", profession: "ux designer", theme: "light", iconsTheme: "dark"}]})
+    -let {header = "user profile", profiles = []} = options;
     section.user-profile
-        +header-of-block("user profile")
-        -options.forEach(function(item, i, arr) {
+        +header-of-block(header)
+        -profiles.forEach(function(item, i, arr) {
             .user-profile__block
                 +profile({photo: item.photo, photoPosition: item.photoPosition,  name: item.name, profession: item.profession, theme: item.theme, iconsTheme: item.iconsTheme})
         -});

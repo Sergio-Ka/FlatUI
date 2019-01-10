@@ -2,9 +2,10 @@ include ../header-of-block/header-of-block.pug
 include ../slider-with-pop-up/slider-with-pop-up.pug
 include ../slider-discrete/slider-discrete.pug
 
-mixin sliders()
+mixin sliders(options = {header: "sliders", sliders: []})
+    -let {header = "sliders", sliders = []} = options;
     section.sliders
-        +header-of-block("sliders")
+        +header-of-block(header)
         .sliders__left-column
             +slider-with-pop-up()
         .sliders__right-column

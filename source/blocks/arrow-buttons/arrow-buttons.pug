@@ -1,11 +1,12 @@
 include ../header-of-block/header-of-block.pug
 include ../arrow-button/arrow-button.pug
 
-mixin arrow-buttons(options = [{direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"}])
+mixin arrow-buttons(options = {header: "arrow buttons", buttons: [{direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"}]})
+    -let {header = "arrow buttons", buttons = [{direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"}]} = options;
     section.arrow-buttons
-        +header-of-block("arrow buttons")
+        +header-of-block(header)
         .arrow-buttons__positioner
-            -options.forEach(function(item, i, arr){
+            -buttons.forEach(function(item, i, arr){
                 .arrow-buttons__arrow-button
                     +arrow-button({direction:item.direction, arrowColor:item.arrowColor, buttonColor:item.buttonColor})
             -});
