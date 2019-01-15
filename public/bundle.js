@@ -196,8 +196,35 @@ module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
 /* 8 */
 /***/ (function(module, exports) {
 
-var $calendar = $( ".js-datepicker__body" );
-$calendar.datepicker({inline: true, prevText: "<", nextText: ">", currentText: "TODAY", dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ], dateFormat: "dd/mm/yy", firstDay: 1, altField: ".datepicker__digit", altFormat: "dd", showButtonPanel: true});
+class Datepicker {
+    
+  constructor(element) {
+    this.$element = element;
+    this.initDatepicker();
+  }
+
+  getDatepickerSettings() {
+    return {
+      prevText: this.$element.data('prevtext'),
+      nextText: this.$element.data('nexttext'),
+      currentText: this.$element.data('currenttext'),
+      dayNamesMin: this.$element.data('daynamesmin'),
+      dateFormat: this.$element.data('dateformat'),
+      firstDay: this.$element.data('firstday'),
+      altField: this.$element.data('altfield'),
+      altFormat: this.$element.data('altformat'),
+      showButtonPanel: true
+    }
+  }
+
+  initDatepicker() {
+    this.$element.datepicker(this.getDatepickerSettings());
+  }
+}
+    
+$('.js-datepicker__body').each(function callback(index, domElement){
+  new Datepicker($(domElement));
+});
 
 /***/ }),
 /* 9 */
@@ -377,8 +404,21 @@ module.exports = __webpack_require__.p + "images/arrow-down.png";
 /* 38 */
 /***/ (function(module, exports) {
 
-$selectmenu = $(".js-selectmenu");
-$selectmenu.selectmenu();
+class Selectmenu {
+    
+  constructor(element) {
+    this.$element = element;
+    this.initSelectmenu();
+  }
+
+  initSelectmenu() {
+    this.$element.selectmenu();
+  }
+}
+    
+$('.js-selectmenu').each(function callback(index, domElement){
+  new Selectmenu($(domElement));
+});
 
 /***/ }),
 /* 39 */
@@ -390,25 +430,35 @@ $selectmenu.selectmenu();
 /* 40 */
 /***/ (function(module, exports) {
 
-let $sliderDiscrete = $(".js-slider-discrete");
+class SliderDescrete {
 
-$sliderDiscrete.slider({
-    min: 0,
-    max: 100,
-    value: 75,
-    range: 'min'
-});
+  constructor(element) {
+    this.$element = element;
+    this.initSlider();
+  }
 
-$('.js-slider-discrete .ui-slider-handle').each(function (index, handle) {
-    if (index % 2 == 0)
-    $(handle).addClass('even-handle');
-    else $(handle).addClass('odd-handle');
-});
+  getSliderSettings() {
+    return {min: this.$element.data('min'),
+            max: this.$element.data('max'),
+            step: this.$element.data('step'),
+            value: this.$element.data('value'),
+            range: this.$element.data('range')}
+  }
 
-$('.js-slider-discrete .ui-slider-range-min').each(function (index, handle) {
-    if (index % 2 == 0)
-    $(handle).addClass('even-range-min');
-    else $(handle).addClass('odd-range-min');
+  initSlider() {
+    this.$element.slider(this.getSliderSettings());
+
+    const sliderTheme = this.$element.data('theme');
+    const sliderHandle = this.$element.find('.ui-slider-handle');
+    const sliderMinRange = this.$element.find('.ui-slider-range-min');
+
+    sliderHandle.addClass(`slider-discrete__handle_theme_${sliderTheme}`);
+    sliderMinRange.addClass(`slider-discrete__range-min_theme_${sliderTheme}`);
+  }
+}
+
+$('.js-slider-discrete').each(function callback(index, domElement){
+  new SliderDescrete($(domElement));
 });
 
 /***/ }),
@@ -421,20 +471,45 @@ $('.js-slider-discrete .ui-slider-range-min').each(function (index, handle) {
 /* 42 */
 /***/ (function(module, exports) {
 
-let $sliderWithPopUp = $('.js-slider-with-pop-up');
-$sliderWithPopUp.slider({
-    min: 0,
-    max: 100,
-    value: 40,
-    create: function (event, ui) {
-        let $sliderhandle = $sliderWithPopUp.children('.ui-slider-handle');
-        $sliderhandle.append('<input class="slider-value js-slider-value" value="40"/><div class="slider-value__tail"></div>');
-    },
-    slide: function (event, ui) {
-        let $slidervalue = $(".js-slider-value");
-        $slidervalue.val(ui.value);
+class SliderWithPopUp {
+  
+    constructor(element) {
+      this.$element = element;
+      this.initSlider();
     }
-});
+  
+    getSliderSettings() {
+      const value = this.$element.data('value');
+
+      return {min: this.$element.data('min'),
+              max: this.$element.data('max'),
+              step: this.$element.data('step'),
+              value: value,
+              range: this.$element.data('range'),
+              create: function createCallback(event, ui) {
+                const sliderHandle = $(event.target).find('.ui-slider-handle');
+                const sliderValue = $(event.target).find('.js-slider-value');
+                sliderHandle.append(`<input class="slider-value js-slider-value" value="${value}"/><div class="slider-value__tail"></div>`);},
+              slide: function slideCallback(event, ui) {
+                const sliderValue = $(event.target).find('.js-slider-value');
+                sliderValue.val(ui.value);}}
+    }
+  
+    initSlider() {
+      this.$element.slider(this.getSliderSettings());
+    
+      const sliderTheme = this.$element.data('theme');
+      const sliderHandle = this.$element.find('.ui-slider-handle');
+      const sliderMinRange = this.$element.find('.ui-slider-range-min');
+    
+      sliderHandle.addClass(`slider-with-pop-up__handle_theme_${sliderTheme}`);
+      sliderMinRange.addClass(`slider-with-pop-up__range-min_theme_${sliderTheme}`);
+    }
+  }
+  
+  $('.js-slider-with-pop-up').each(function callback(index, domElement){
+    new SliderWithPopUp($(domElement));
+  });
 
 /***/ }),
 /* 43 */

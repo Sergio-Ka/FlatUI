@@ -31,10 +31,6 @@
   background: #E75735;
 }
 
-.even-handle, .even-range-min {
-  background: #4EB7A8 !important;
-}
-
 .ui-slider-horizontal {
   height: 5px;
 }

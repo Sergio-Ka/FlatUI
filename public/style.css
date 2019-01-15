@@ -678,6 +678,10 @@
 .simple-form__message_color_green {
   background: #4eb7a8;
 }
+.slider-discrete__handle_theme_green,
+.slider-discrete__range-min_theme_green {
+  background: #4eb7a8 !important;
+}
 .slider-discrete__scale {
   min-width: 14.444rem;
   padding-top: 0.167rem;
@@ -705,6 +709,10 @@
   font-weight: bold;
   color: #9d9d9d;
   width: 4%;
+}
+.slider-with-pop-up__handle_theme_orange,
+.slider-with-pop-up__range-min_theme_orange {
+  background: #e75735 !important;
 }
 .slider-value {
   position: absolute;
@@ -1088,10 +1096,6 @@ html {
   border: 0;
   background-position: 0 0;
   background: #E75735;
-}
-
-.even-handle, .even-range-min {
-  background: #4EB7A8 !important;
 }
 
 .ui-slider-horizontal {

@@ -46,7 +46,8 @@ mixin wrap()
                                                             {color:"#4EB7A8", percent:26},
                                                             {color:"#E75735", percent:30}]}]
                                 })
-        +sliders({header: "sliders", sliders: []})
+        +sliders({header: "sliders", sliders: [{min: 0, max: 100, step: 1, value: 40, range: "", theme: "orange"},
+                                                {min: 0, max: 100, step: 25, value: 75, range: "min", theme: "green"}]})
         +stages({header: "stages", stages: {markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735",
                                             colorOfInactiveStage:"#E5E5E5", textColor:"#FFFFFF", inactiveTextColor:"#888888"}})
         +form-elements({headerOfFormElementsBlock: "form elements", headerOfTogglesBlock: "toggles", headerOfTickBlock: "tick boxes",
@@ -75,7 +76,16 @@ mixin wrap()
                             link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.379727947122!2d-122.4220465!3d37.7936737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858092e7ee4833%3A0xba9adf323eff9155!2s1259+California+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2sru!4v1513867048557"}
                     })
         .wrap__positioner
-            +calendar({header: "calendar", datepicker: {}})
+            +calendar({header: "calendar", datepicker: {prevText: "<",
+                                                        nextText: ">",
+                                                        currentText: "TODAY",
+                                                        dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ],
+                                                        dateFormat: "dd/mm/yy",
+                                                        firstDay: 1,
+                                                        altField: ".datepicker__digit",
+                                                        altFormat: "dd",
+                                                        showButtonPanel: true}
+                        })
             +messaging({header: "messaging",
                         chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
                                 message: "Hey ! So are we cool to meet at the art gallery? Say 8pm",
