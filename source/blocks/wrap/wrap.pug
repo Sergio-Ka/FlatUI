@@ -73,7 +73,7 @@ mixin wrap()
                     })
         +location({header: "location",
                     map: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
-                            link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.379727947122!2d-122.4220465!3d37.7936737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858092e7ee4833%3A0xba9adf323eff9155!2s1259+California+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2sru!4v1513867048557"}
+                            lat: 37.791079, lng: -122.415078, markerIcon: "images/icon-map-popup.png"}
                     })
         .wrap__positioner
             +calendar({header: "calendar", datepicker: {prevText: "<",
@@ -84,7 +84,7 @@ mixin wrap()
                                                         firstDay: 1,
                                                         altField: ".datepicker__digit",
                                                         altFormat: "dd",
-                                                        showButtonPanel: true}
+                                                        showButtonPanel: "false"}
                         })
             +messaging({header: "messaging",
                         chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",

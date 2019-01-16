@@ -84,7 +84,7 @@ var map = {
 	"./blocks/arrow-buttons/arrow-buttons.styl": 3,
 	"./blocks/calendar/calendar.styl": 4,
 	"./blocks/chat/chat.styl": 5,
-	"./blocks/chat/images/icon-3.png": 6,
+	"./blocks/chat/images/icon-chat-sprite.png": 6,
 	"./blocks/chat/images/photo-sarah-brown.png": 7,
 	"./blocks/datepicker/datepicker.js": 8,
 	"./blocks/datepicker/datepicker.styl": 9,
@@ -93,52 +93,55 @@ var map = {
 	"./blocks/form-elements/form-elements.styl": 12,
 	"./blocks/header-of-block/header-of-block.styl": 13,
 	"./blocks/location/location.styl": 14,
-	"./blocks/map/images/icon-1.png": 15,
-	"./blocks/map/images/icon-2.png": 16,
-	"./blocks/map/map.styl": 17,
-	"./blocks/messaging/messaging.styl": 18,
-	"./blocks/news-events/news-events.styl": 19,
-	"./blocks/news/images/news-photo.png": 20,
-	"./blocks/news/news.styl": 21,
-	"./blocks/percentage-pie-chart/percentage-pie-chart.styl": 22,
-	"./blocks/percentage/percentage.styl": 23,
-	"./blocks/pie-chart/pie-chart.styl": 24,
-	"./blocks/profile/images/dribbble-white.png": 25,
-	"./blocks/profile/images/dribbble.png": 26,
-	"./blocks/profile/images/facebook-white.png": 27,
-	"./blocks/profile/images/facebook.png": 28,
-	"./blocks/profile/images/photo-john-smith.png": 29,
-	"./blocks/profile/images/photo-sarah-brown.png": 30,
-	"./blocks/profile/images/twitter-white.png": 31,
-	"./blocks/profile/images/twitter.png": 32,
-	"./blocks/profile/profile.styl": 33,
-	"./blocks/search-drop-down/search-drop-down.styl": 34,
-	"./blocks/search-form/images/mag-glass.png": 35,
-	"./blocks/search-form/search-form.styl": 36,
-	"./blocks/selectmenu/images/arrow-down.png": 37,
-	"./blocks/selectmenu/selectmenu.js": 38,
-	"./blocks/simple-form/simple-form.styl": 39,
-	"./blocks/slider-discrete/slider-discrete.js": 40,
-	"./blocks/slider-discrete/slider-discrete.styl": 41,
-	"./blocks/slider-with-pop-up/slider-with-pop-up.js": 42,
-	"./blocks/slider-with-pop-up/slider-with-pop-up.styl": 43,
-	"./blocks/sliders/sliders.styl": 44,
-	"./blocks/stage/stage.styl": 45,
-	"./blocks/stages/stages.styl": 46,
-	"./blocks/standard-button/standard-button.styl": 47,
-	"./blocks/standard-buttons/standard-buttons.styl": 48,
-	"./blocks/tick-box/images/tick-boxes.png": 49,
-	"./blocks/tick-box/tick-box.styl": 50,
-	"./blocks/toggle-switch/toggle-switch.styl": 51,
-	"./blocks/user-profile/user-profile.styl": 52,
-	"./blocks/video-frame/video-frame.styl": 53,
-	"./blocks/video/video.styl": 54,
-	"./blocks/wrap/wrap.styl": 55,
+	"./blocks/map/images/icon-map-popup.png": 15,
+	"./blocks/map/images/icon-point.png": 16,
+	"./blocks/map/images/icon-target.png": 17,
+	"./blocks/map/map.js": 18,
+	"./blocks/map/map.styl": 19,
+	"./blocks/messaging/messaging.styl": 20,
+	"./blocks/news-events/news-events.styl": 21,
+	"./blocks/news/images/news-photo.png": 22,
+	"./blocks/news/news.styl": 23,
+	"./blocks/percentage-pie-chart/percentage-pie-chart.styl": 24,
+	"./blocks/percentage/percentage.styl": 25,
+	"./blocks/pie-chart/pie-chart.styl": 26,
+	"./blocks/profile/images/dribbble-white.png": 27,
+	"./blocks/profile/images/dribbble.png": 28,
+	"./blocks/profile/images/facebook-white.png": 29,
+	"./blocks/profile/images/facebook.png": 30,
+	"./blocks/profile/images/photo-john-smith.png": 31,
+	"./blocks/profile/images/photo-sarah-brown.png": 32,
+	"./blocks/profile/images/twitter-white.png": 33,
+	"./blocks/profile/images/twitter.png": 34,
+	"./blocks/profile/profile.styl": 35,
+	"./blocks/search-drop-down/search-drop-down.styl": 36,
+	"./blocks/search-form/images/mag-glass.png": 37,
+	"./blocks/search-form/search-form.styl": 38,
+	"./blocks/selectmenu/images/arrow-down.png": 39,
+	"./blocks/selectmenu/selectmenu.js": 40,
+	"./blocks/simple-form/simple-form.styl": 41,
+	"./blocks/slider-discrete/slider-discrete.js": 42,
+	"./blocks/slider-discrete/slider-discrete.styl": 43,
+	"./blocks/slider-with-pop-up/slider-with-pop-up.js": 44,
+	"./blocks/slider-with-pop-up/slider-with-pop-up.styl": 45,
+	"./blocks/sliders/sliders.styl": 46,
+	"./blocks/stage/stage.styl": 47,
+	"./blocks/stages/stages.styl": 48,
+	"./blocks/standard-button/standard-button.js": 49,
+	"./blocks/standard-button/standard-button.styl": 50,
+	"./blocks/standard-buttons/standard-buttons.styl": 51,
+	"./blocks/tick-box/images/tick-boxes.png": 52,
+	"./blocks/tick-box/tick-box.styl": 53,
+	"./blocks/toggle-switch/toggle-switch.styl": 54,
+	"./blocks/user-profile/user-profile.styl": 55,
+	"./blocks/video-frame/video-frame.styl": 56,
+	"./blocks/video/video.styl": 57,
+	"./blocks/wrap/wrap.styl": 58,
 	"./index.js": 0,
-	"./index.styl": 56,
-	"./vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js": 57,
-	"./vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css": 58,
-	"./vendors/jquery-ui-1.12.1.custom/jquery-ui.js": 59
+	"./index.styl": 59,
+	"./vendors/jquery-ui-1.12.1.custom/external/jquery/jquery.js": 60,
+	"./vendors/jquery-ui-1.12.1.custom/jquery-ui-forFlatUI.css": 61,
+	"./vendors/jquery-ui-1.12.1.custom/jquery-ui.js": 62
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -184,7 +187,7 @@ webpackContext.id = 1;
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-3.png";
+module.exports = __webpack_require__.p + "images/icon-chat-sprite.png";
 
 /***/ }),
 /* 7 */
@@ -200,7 +203,7 @@ class Datepicker {
     
   constructor(element) {
     this.$element = element;
-    this.initDatepicker();
+    this.initDatepicker(this.$element);
   }
 
   getDatepickerSettings() {
@@ -213,12 +216,16 @@ class Datepicker {
       firstDay: this.$element.data('firstday'),
       altField: this.$element.data('altfield'),
       altFormat: this.$element.data('altformat'),
-      showButtonPanel: true
+      showButtonPanel: this.$element.data('showpanel')
     }
   }
 
-  initDatepicker() {
-    this.$element.datepicker(this.getDatepickerSettings());
+  initDatepicker(calendar) {
+    calendar.datepicker(this.getDatepickerSettings());
+    const button = $('.js-datepicker__button');
+    button.on('click', function callback(event) {
+      calendar.datepicker('setDate', new Date());
+    });
   }
 }
     
@@ -266,25 +273,49 @@ module.exports = __webpack_require__.p + "images/events-photo.png";
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-1.png";
+module.exports = __webpack_require__.p + "images/icon-map-popup.png";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-2.png";
+module.exports = __webpack_require__.p + "images/icon-point.png";
 
 /***/ }),
 /* 17 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/icon-target.png";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+class Map {
+    
+  constructor(element) {
+    this.$element = element;
+    this.initMap();
+  }
+
+  initMap() {
+    const mapCoordinate = {lat: this.$element.data('lat'), lng: this.$element.data('lng')};
+    const mapFrame = this.$element.find('.js-map__frame');
+    const mapOptions = {zoom: 13, center: mapCoordinate, mapTypeControl: false, zoomControl: false, streetViewControl: false};
+
+    const map = new google.maps.Map(mapFrame[0], mapOptions);
+    const mapPopup = new google.maps.Marker({
+      position: mapCoordinate,
+      icon: this.$element.data('icon'),
+      title: this.$element.data('title'),
+      map: map
+    });
+  }
+}
+    
+$('.js-map').each(function callback(index, domElement){
+  new Map($(domElement));
+});
 
 /***/ }),
 /* 19 */
@@ -294,9 +325,9 @@ module.exports = __webpack_require__.p + "images/icon-2.png";
 
 /***/ }),
 /* 20 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/news-photo.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 21 */
@@ -306,9 +337,9 @@ module.exports = __webpack_require__.p + "images/news-photo.png";
 
 /***/ }),
 /* 22 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/news-photo.png";
 
 /***/ }),
 /* 23 */
@@ -324,69 +355,69 @@ module.exports = __webpack_require__.p + "images/news-photo.png";
 
 /***/ }),
 /* 25 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/dribbble-white.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 26 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/dribbble.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/facebook-white.png";
+module.exports = __webpack_require__.p + "images/dribbble-white.png";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/facebook.png";
+module.exports = __webpack_require__.p + "images/dribbble.png";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/photo-john-smith.png";
+module.exports = __webpack_require__.p + "images/facebook-white.png";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
+module.exports = __webpack_require__.p + "images/facebook.png";
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/twitter-white.png";
+module.exports = __webpack_require__.p + "images/photo-john-smith.png";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/twitter.png";
+module.exports = __webpack_require__.p + "images/photo-sarah-brown.png";
 
 /***/ }),
 /* 33 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/twitter-white.png";
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/twitter.png";
 
 /***/ }),
 /* 35 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/mag-glass.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 36 */
@@ -398,10 +429,22 @@ module.exports = __webpack_require__.p + "images/mag-glass.png";
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/arrow-down.png";
+module.exports = __webpack_require__.p + "images/mag-glass.png";
 
 /***/ }),
 /* 38 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/arrow-down.png";
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports) {
 
 class Selectmenu {
@@ -421,13 +464,13 @@ $('.js-selectmenu').each(function callback(index, domElement){
 });
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports) {
 
 class SliderDescrete {
@@ -439,10 +482,10 @@ class SliderDescrete {
 
   getSliderSettings() {
     return {min: this.$element.data('min'),
-            max: this.$element.data('max'),
-            step: this.$element.data('step'),
-            value: this.$element.data('value'),
-            range: this.$element.data('range')}
+      max: this.$element.data('max'),
+      step: this.$element.data('step'),
+      value: this.$element.data('value'),
+      range: this.$element.data('range')}
   }
 
   initSlider() {
@@ -462,56 +505,6 @@ $('.js-slider-discrete').each(function callback(index, domElement){
 });
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports) {
-
-class SliderWithPopUp {
-  
-    constructor(element) {
-      this.$element = element;
-      this.initSlider();
-    }
-  
-    getSliderSettings() {
-      const value = this.$element.data('value');
-
-      return {min: this.$element.data('min'),
-              max: this.$element.data('max'),
-              step: this.$element.data('step'),
-              value: value,
-              range: this.$element.data('range'),
-              create: function createCallback(event, ui) {
-                const sliderHandle = $(event.target).find('.ui-slider-handle');
-                const sliderValue = $(event.target).find('.js-slider-value');
-                sliderHandle.append(`<input class="slider-value js-slider-value" value="${value}"/><div class="slider-value__tail"></div>`);},
-              slide: function slideCallback(event, ui) {
-                const sliderValue = $(event.target).find('.js-slider-value');
-                sliderValue.val(ui.value);}}
-    }
-  
-    initSlider() {
-      this.$element.slider(this.getSliderSettings());
-    
-      const sliderTheme = this.$element.data('theme');
-      const sliderHandle = this.$element.find('.ui-slider-handle');
-      const sliderMinRange = this.$element.find('.ui-slider-range-min');
-    
-      sliderHandle.addClass(`slider-with-pop-up__handle_theme_${sliderTheme}`);
-      sliderMinRange.addClass(`slider-with-pop-up__range-min_theme_${sliderTheme}`);
-    }
-  }
-  
-  $('.js-slider-with-pop-up').each(function callback(index, domElement){
-    new SliderWithPopUp($(domElement));
-  });
-
-/***/ }),
 /* 43 */
 /***/ (function(module, exports) {
 
@@ -521,7 +514,46 @@ class SliderWithPopUp {
 /* 44 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+class SliderWithPopUp {
+  
+  constructor(element) {
+    this.$element = element;
+    this.initSlider();
+  }
+
+  getSliderSettings() {
+    const value = this.$element.data('value');
+
+    return {
+      min: this.$element.data('min'),
+      max: this.$element.data('max'),
+      step: this.$element.data('step'),
+      value: value,
+      range: this.$element.data('range'),
+      create: function createCallback(event, ui) {
+        const sliderHandle = $(event.target).find('.ui-slider-handle');
+        const sliderValue = $(event.target).find('.js-slider-value');
+        sliderHandle.append(`<input class="slider-value js-slider-value" value="${value}"/><div class="slider-value__tail"></div>`);},
+      slide: function slideCallback(event, ui) {
+        const sliderValue = $(event.target).find('.js-slider-value');
+        sliderValue.val(ui.value);}}
+  }
+
+  initSlider() {
+    this.$element.slider(this.getSliderSettings());
+  
+    const sliderTheme = this.$element.data('theme');
+    const sliderHandle = this.$element.find('.ui-slider-handle');
+    const sliderMinRange = this.$element.find('.ui-slider-range-min');
+  
+    sliderHandle.addClass(`slider-with-pop-up__handle_theme_${sliderTheme}`);
+    sliderMinRange.addClass(`slider-with-pop-up__range-min_theme_${sliderTheme}`);
+  }
+}
+  
+$('.js-slider-with-pop-up').each(function callback(index, domElement){
+  new SliderWithPopUp($(domElement));
+});
 
 /***/ }),
 /* 45 */
@@ -549,9 +581,35 @@ class SliderWithPopUp {
 
 /***/ }),
 /* 49 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/tick-boxes.png";
+class StandardButton {
+    
+  constructor(element) {
+    this.$element = element;
+    this.initButton();
+  }
+
+  initButton() {
+    this.$element.on('click', function callback(event) {
+      event.preventDefault();
+      let targetCoordinates = event.target.getBoundingClientRect();
+      let xCoordinate = event.clientX - targetCoordinates.left;
+      let yCoordinate = event.clientY - targetCoordinates.top;
+
+      let ripple = $('<div>').addClass('standard-button_ripple');
+      ripple.css('top', `${yCoordinate}px`);
+      ripple.css('left', `${xCoordinate}px`);
+      ripple.appendTo(event.target);
+
+      setTimeout(function callback() {ripple.remove();}, 600);
+    });
+  }
+}
+    
+$('.js-standard-button').each(function callback(index, domElement){
+  new StandardButton($(domElement));
+});
 
 /***/ }),
 /* 50 */
@@ -567,9 +625,9 @@ module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 52 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 53 */
@@ -597,6 +655,24 @@ module.exports = __webpack_require__.p + "images/tick-boxes.png";
 
 /***/ }),
 /* 57 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11611,13 +11687,13 @@ return jQuery;
 
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery UI - v1.12.1 - 2017-12-21

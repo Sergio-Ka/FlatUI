@@ -8,4 +8,4 @@ mixin standard-button(options = {text:"button", color:"red", size:"", effect:"ri
     -(size == "small")?cssClass += "standard-button_size_small ":cssClass += " ";
     -(effect == "ripple")?cssClass += "standard-button_ripple-effect ":cssClass += " ";
     -cssClass += `standard-button_theme_${theme}`;
-    button.standard-button(class =cssClass)= text
+    button.standard-button.js-standard-button(class =cssClass)= text

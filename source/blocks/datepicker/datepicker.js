@@ -2,7 +2,7 @@ class Datepicker {
     
   constructor(element) {
     this.$element = element;
-    this.initDatepicker();
+    this.initDatepicker(this.$element);
   }
 
   getDatepickerSettings() {
@@ -15,12 +15,16 @@ class Datepicker {
       firstDay: this.$element.data('firstday'),
       altField: this.$element.data('altfield'),
       altFormat: this.$element.data('altformat'),
-      showButtonPanel: true
+      showButtonPanel: this.$element.data('showpanel')
     }
   }
 
-  initDatepicker() {
-    this.$element.datepicker(this.getDatepickerSettings());
+  initDatepicker(calendar) {
+    calendar.datepicker(this.getDatepickerSettings());
+    const button = $('.js-datepicker__button');
+    button.on('click', function callback(event) {
+      calendar.datepicker('setDate', new Date());
+    });
   }
 }
     
