@@ -137,6 +137,7 @@
 .ui-selectmenu-button.ui-button {
   text-align: left;
   white-space: nowrap;
+  width: auto;
 }
 
 .ui-button {
@@ -145,7 +146,7 @@
   color: #888888;
   padding: .4em 1em;
   height: 17px;
-  margin-top: 18px;
+  margin: 18px 0 0 0;
   display: block;
   position: relative;
   cursor: pointer;
@@ -189,6 +190,11 @@
 
 
 /*JQuery UI datepicker CSS start here*/
+.ui-datepicker {
+  width: auto;
+  padding: 0;
+}
+
 .ui-datepicker-header {
   height: 43px;
   border-radius: 0;
@@ -216,16 +222,14 @@
 .ui-datepicker-title {
   padding-top: 6px;
   font-size: 1.22rem;
-  font-weight: normal;
 }
 
 .ui-datepicker-calendar>thead,
 .ui-datepicker-calendar>thead>tr {
-  height: 27px;
+  height: 29px;
   background: #E75735;
   color: #FFFFFF;
   font-size: 0.5rem;
-  font-weight: normal;
 }
 
 .ui-datepicker-calendar>tbody>tr {
@@ -246,13 +250,6 @@
 .ui-state-default {
   color: #868686;
   text-decoration: none;
-}
-
-.ui-datepicker-buttonpane {
-  background: #E5E5E5;
-  height: 49px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 .ui-datepicker-today {
@@ -278,5 +275,36 @@
 
 .ui-datepicker-current-day {
   background: #E75735;
+}
+
+.ui-datepicker .ui-icon {
+	text-indent: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 0.2em;
+  height: 0.7em;
+}
+
+.ui-datepicker-year {
+  display: none;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  line-height: 1.3em;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 0;
+}
+
+.ui-datepicker table {
+  font-size: 1rem;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  text-align: center;
 }
 /*JQuery UI datepicker CSS end here*/

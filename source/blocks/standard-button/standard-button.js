@@ -8,11 +8,11 @@ class StandardButton {
   initButton() {
     this.$element.on('click', function callback(event) {
       event.preventDefault();
-      let targetCoordinates = event.target.getBoundingClientRect();
-      let xCoordinate = event.clientX - targetCoordinates.left;
-      let yCoordinate = event.clientY - targetCoordinates.top;
+      const targetCoordinates = event.target.getBoundingClientRect();
+      const xCoordinate = event.clientX - targetCoordinates.left;
+      const yCoordinate = event.clientY - targetCoordinates.top;
 
-      let ripple = $('<div>').addClass('standard-button_ripple');
+      const ripple = $('<div class="standard-button_ripple">');
       ripple.css('top', `${yCoordinate}px`);
       ripple.css('left', `${xCoordinate}px`);
       ripple.appendTo(event.target);

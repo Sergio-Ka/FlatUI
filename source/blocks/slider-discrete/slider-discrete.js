@@ -10,7 +10,7 @@ class SliderDescrete {
       max: this.$element.data('max'),
       step: this.$element.data('step'),
       value: this.$element.data('value'),
-      range: this.$element.data('range')}
+      range: this.$element.data('range'),}
   }
 
   initSlider() {

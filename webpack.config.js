@@ -2,9 +2,9 @@
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = {
   entry: './source/index.js',
@@ -16,7 +16,13 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('style.css'),
-    new HtmlWebpackPlugin({template: 'source/index.pug'})
+    new HtmlWebpackPlugin({template: 'source/index.pug'}),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery'
+    }),
   ],
 
   module: {
@@ -55,11 +61,5 @@ module.exports = {
 };
 
 if (NODE_ENV == 'production') {
-  module.exports.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: {
-        warnings: true,
-        drop_console: true,
-        unsafe: true,
-    },
-  }));
+  module.exports.plugins.push(new MinifyPlugin(/*minifyOpts, pluginOpts*/));
 };

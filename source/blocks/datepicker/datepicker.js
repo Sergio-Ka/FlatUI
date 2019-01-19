@@ -1,4 +1,4 @@
-class Datepicker {
+class Datepick {
     
   constructor(element) {
     this.$element = element;
@@ -6,17 +6,14 @@ class Datepicker {
   }
 
   getDatepickerSettings() {
-    return {
-      prevText: this.$element.data('prevtext'),
+    return {prevText: this.$element.data('prevtext'),
       nextText: this.$element.data('nexttext'),
-      currentText: this.$element.data('currenttext'),
       dayNamesMin: this.$element.data('daynamesmin'),
       dateFormat: this.$element.data('dateformat'),
       firstDay: this.$element.data('firstday'),
       altField: this.$element.data('altfield'),
       altFormat: this.$element.data('altformat'),
-      showButtonPanel: this.$element.data('showpanel')
-    }
+      showButtonPanel: this.$element.data('showpanel'),}
   }
 
   initDatepicker(calendar) {
@@ -29,5 +26,5 @@ class Datepicker {
 }
     
 $('.js-datepicker__body').each(function callback(index, domElement){
-  new Datepicker($(domElement));
+  new Datepick($(domElement));
 });

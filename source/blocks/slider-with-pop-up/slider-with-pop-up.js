@@ -8,8 +8,7 @@ class SliderWithPopUp {
   getSliderSettings() {
     const value = this.$element.data('value');
 
-    return {
-      min: this.$element.data('min'),
+    return {min: this.$element.data('min'),
       max: this.$element.data('max'),
       step: this.$element.data('step'),
       value: value,
@@ -20,7 +19,7 @@ class SliderWithPopUp {
         sliderHandle.append(`<input class="slider-value js-slider-value" value="${value}"/><div class="slider-value__tail"></div>`);},
       slide: function slideCallback(event, ui) {
         const sliderValue = $(event.target).find('.js-slider-value');
-        sliderValue.val(ui.value);}}
+        sliderValue.val(ui.value);},}
   }
 
   initSlider() {
