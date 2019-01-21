@@ -16,18 +16,18 @@ mixin wrap()
     main.wrap
         section.wrap__column.wrap__column_position_center
                 +standard-buttons({header: "standard buttons", buttons: [
-                                {text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""},
-                                {text:"button", color:"green", size:"", effect:"ripple", activeStatus:"", theme:""},
-                                {text:"button", color:"red", size:"", effect:"ripple", activeStatus:"", theme:""},
-                                {text:"button", color:"red", size:"small", effect:"ripple", activeStatus:"", theme:""},
-                                {text:"button", color:"green", size:"small", effect:"", activeStatus:"", theme:""},
-                                {text:"button", color:"green", size:"", effect:"", activeStatus:"", theme:""},
-                                {text:"button", color:"red", size:"", effect:"", activeStatus:"", theme:""},
-                                {text:"button", color:"red", size:"small", effect:"", activeStatus:"", theme:""},
-                                {text:"button", color:"green", size:"small", effect:"", activeStatus:"inactive", theme:""},
-                                {text:"button", color:"green", size:"", effect:"", activeStatus:"inactive", theme:""},
-                                {text:"button", color:"red", size:"", effect:"", activeStatus:"inactive", theme:""},
-                                {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive", theme:""}]
+                                {text:"button", color:"green", size:"small", effect:"ripple", activeStatus:""},
+                                {text:"button", color:"green", size:"", effect:"ripple", activeStatus:""},
+                                {text:"button", color:"red", size:"", effect:"ripple", activeStatus:""},
+                                {text:"button", color:"red", size:"small", effect:"ripple", activeStatus:""},
+                                {text:"button", color:"green", size:"small", effect:"", activeStatus:""},
+                                {text:"button", color:"green", size:"", effect:"", activeStatus:""},
+                                {text:"button", color:"red", size:"", effect:"", activeStatus:""},
+                                {text:"button", color:"red", size:"small", effect:"", activeStatus:""},
+                                {text:"button", color:"green", size:"small", effect:"", activeStatus:"inactive"},
+                                {text:"button", color:"green", size:"", effect:"", activeStatus:"inactive"},
+                                {text:"button", color:"red", size:"", effect:"", activeStatus:"inactive"},
+                                {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive"}]
                                 })
                 +arrow-buttons({header: "arrow buttons", buttons: [
                                 {direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"},
@@ -74,7 +74,7 @@ mixin wrap()
                                         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."},
                                 events: {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title",
                                         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                                        button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}}
+                                        button: {text:"add to calendar", color:"green", size:"small", effect:"", activeStatus:"inactive"}}
                                 })
                 +location({header: "location",
                         map: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
@@ -95,7 +95,7 @@ mixin wrap()
                                         chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
                                                 message: "Hey ! So are we cool to meet at the art gallery? Say 8pm",
                                                 inputPlaceholder: "Yeah that sounds great. See you then.",
-                                                button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}}
+                                                button: {text:"reply", color:"green", size:"", effect:"", activeStatus:""}}
                                         })
                 +video({header: "video", frame: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}
                         })

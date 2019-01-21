@@ -1,7 +1,7 @@
 include ../standard-button/standard-button.pug
 
-mixin events(options = {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}})
-    -let {image = "images/events-photo.png", day = "24", month = "Aug", title = "this is the title", text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", button = {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}} = options;
+mixin events(options = {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"inactive"}})
+    -let {image = "images/events-photo.png", day = "24", month = "Aug", title = "this is the title", text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", button = {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"inactive"}} = options;
     .events
         .events__image(style=`background-image: url(${image});`)
         form.events__content

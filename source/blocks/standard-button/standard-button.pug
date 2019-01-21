@@ -1,5 +1,5 @@
-mixin standard-button(options = {text:"button", color:"red", size:"", effect:"ripple", activeStatus:"", theme:""})
-    -let {text="button", color="red", size="", effect="ripple", activeStatus="", theme=""} = options;
+mixin standard-button(options = {text:"button", color:"red", size:"", effect:"ripple", activeStatus:""})
+    -let {text="button", color="red", size="", effect="ripple", activeStatus=""} = options;
     -(color == "red")?cssClass = "standard-button_color_red ":cssClass = "standard-button_color_green ";
     -if (activeStatus == "inactive" && color == "red")
         -cssClass = "standard-button_inactive-red "
@@ -7,5 +7,4 @@ mixin standard-button(options = {text:"button", color:"red", size:"", effect:"ri
         -cssClass = "standard-button_inactive-green ";
     -(size == "small")?cssClass += "standard-button_size_small ":cssClass += " ";
     -(effect == "ripple")?cssClass += "standard-button_ripple-effect ":cssClass += " ";
-    -cssClass += `standard-button_theme_${theme}`;
     button.standard-button.js-standard-button(class =cssClass)= text

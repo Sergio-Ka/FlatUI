@@ -1,7 +1,7 @@
 include ../standard-button/standard-button.pug
 
-mixin chat(options = {name: "Sarah Brown", photo: "images/photo-sarah-brown.png", message: "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder: "Yeah that sounds great. See you then.", button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}})
-    -let {name = "Sarah Brown", photo = "images/photo-sarah-brown.png", message = "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder = "Yeah that sounds great. See you then.", button = {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}} = options;
+mixin chat(options = {name: "Sarah Brown", photo: "images/photo-sarah-brown.png", message: "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder: "Yeah that sounds great. See you then.", button: {text:"reply", color:"green", size:"", effect:"", activeStatus:""}})
+    -let {name = "Sarah Brown", photo = "images/photo-sarah-brown.png", message = "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder = "Yeah that sounds great. See you then.", button = {text:"reply", color:"green", size:"", effect:"", activeStatus:""}} = options;
     form.chat
         .chat__name= name
         .chat__header-lower-block

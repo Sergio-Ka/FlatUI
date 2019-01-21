@@ -753,7 +753,8 @@ button.ui-button::-moz-focus-inner {
   margin: 0.222rem 0 0 0.278rem;
 }
 .events__button {
-  margin: 0 0 0 0.333rem;
+  height: 1.5rem;
+  margin: 1rem 0.8rem 0 0.8rem;
 }
 .form-elements__container {
   display: flex;
@@ -1337,6 +1338,8 @@ button.ui-button::-moz-focus-inner {
   }
 }
 .standard-button {
+  width: 100%;
+  height: 100%;
   min-width: 6.556rem;
   min-height: 1.944rem;
   border: none;
@@ -1351,7 +1354,7 @@ button.ui-button::-moz-focus-inner {
   color: #4eb7a8;
   background: #fff;
   border: 0.056rem solid #4eb7a8;
-  border-bottom: 0.222rem solid #4eb7a8;
+  border-bottom: 0.222rem solid #28a290;
 }
 .standard-button_inactive-red {
   color: #e75735;
@@ -1389,22 +1392,6 @@ button.ui-button::-moz-focus-inner {
   opacity: 0;
   border-radius: 100%;
   animation: ripple 0.6s ease-out;
-}
-.standard-button_theme_events {
-  display: block;
-  background: #fff;
-  color: #4eb7a8;
-  font-size: 0.6rem;
-  letter-spacing: 0.03rem;
-  min-width: 7.111rem;
-  min-height: 1.444rem;
-  margin: 1.056rem 0.5rem 1.333rem;
-}
-.standard-button_theme_chat {
-  display: block;
-  font-family: 'Lato', Sans-Serif;
-  width: 13.556rem;
-  height: 1.944rem;
 }
 @-moz-keyframes ripple {
   0% {
