@@ -1,6 +1,18 @@
 .wrap
-  width 100%
-  max-width 33rem
-  min-height 176.444rem
-  margin 0 auto
   word-break break-all
+
+  &__column
+    max-width 33rem
+    min-height 176.444rem
+
+    &_position_center
+      margin 4.5rem auto 0
+  
+  &__positioner
+    display flex
+    flex-wrap nowrap
+    justify-content space-between
+    margin 0
+
+    @media only screen and (max-width 37.5rem)
+      flex-wrap wrap

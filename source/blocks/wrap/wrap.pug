@@ -13,83 +13,89 @@ include ../calendar/calendar.pug
 include ../messaging/messaging.pug
 
 mixin wrap()
-    .wrap
-        +standard-buttons({header: "standard buttons", buttons: [
-                            {text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""},
-                            {text:"button", color:"green", size:"", effect:"ripple", activeStatus:"", theme:""},
-                            {text:"button", color:"red", size:"", effect:"ripple", activeStatus:"", theme:""},
-                            {text:"button", color:"red", size:"small", effect:"ripple", activeStatus:"", theme:""},
-                            {text:"button", color:"green", size:"small", effect:"", activeStatus:"", theme:""},
-                            {text:"button", color:"green", size:"", effect:"", activeStatus:"", theme:""},
-                            {text:"button", color:"red", size:"", effect:"", activeStatus:"", theme:""},
-                            {text:"button", color:"red", size:"small", effect:"", activeStatus:"", theme:""},
-                            {text:"button", color:"green", size:"small", effect:"", activeStatus:"inactive", theme:""},
-                            {text:"button", color:"green", size:"", effect:"", activeStatus:"inactive", theme:""},
-                            {text:"button", color:"red", size:"", effect:"", activeStatus:"inactive", theme:""},
-                            {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive", theme:""}]
-                            })
-        +arrow-buttons({header: "arrow buttons", buttons: [
-                        {direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"},
-                        {direction:"right", arrowColor:"#4EB7A8", buttonColor:"white"},
-                        {direction:"left", arrowColor:"#FFFFFF", buttonColor:"gray"},
-                        {direction:"right", arrowColor:"#FFFFFF", buttonColor:"gray"},
-                        {direction:"left", arrowColor:"#FFFFFF", buttonColor:"green"},
-                        {direction:"right", arrowColor:"#FFFFFF", buttonColor:"green"}]
-                        })
-        +percentage-pie-chart({header: "percentages / pie chart", charts: [
-                                {type:"percentage", percent:0},
-                                {type:"percentage", percent:38},
-                                {type:"percentage", percent:62},
-                                {type:"percentage", percent:89},
-                                {type:"pie-chart", percent:[{color:"#E5E5E5", percent:33},
-                                                            {color:"#747474", percent:11},
-                                                            {color:"#4EB7A8", percent:26},
-                                                            {color:"#E75735", percent:30}]}]
+    main.wrap
+        section.wrap__column.wrap__column_position_center
+                +standard-buttons({header: "standard buttons", buttons: [
+                                {text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""},
+                                {text:"button", color:"green", size:"", effect:"ripple", activeStatus:"", theme:""},
+                                {text:"button", color:"red", size:"", effect:"ripple", activeStatus:"", theme:""},
+                                {text:"button", color:"red", size:"small", effect:"ripple", activeStatus:"", theme:""},
+                                {text:"button", color:"green", size:"small", effect:"", activeStatus:"", theme:""},
+                                {text:"button", color:"green", size:"", effect:"", activeStatus:"", theme:""},
+                                {text:"button", color:"red", size:"", effect:"", activeStatus:"", theme:""},
+                                {text:"button", color:"red", size:"small", effect:"", activeStatus:"", theme:""},
+                                {text:"button", color:"green", size:"small", effect:"", activeStatus:"inactive", theme:""},
+                                {text:"button", color:"green", size:"", effect:"", activeStatus:"inactive", theme:""},
+                                {text:"button", color:"red", size:"", effect:"", activeStatus:"inactive", theme:""},
+                                {text:"button", color:"red", size:"small", effect:"", activeStatus:"inactive", theme:""}]
                                 })
-        +sliders({header: "sliders", sliders: [{min: 0, max: 100, step: 1, value: 40, range: "", theme: "orange"},
-                                                {min: 0, max: 100, step: 25, value: 75, range: "min", theme: "green"}]})
-        +stages({header: "stages", stages: {markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735",
-                                            colorOfInactiveStage:"#E5E5E5", textColor:"#FFFFFF", inactiveTextColor:"#888888"}})
-        +form-elements({headerOfFormElementsBlock: "form elements", headerOfTogglesBlock: "toggles", headerOfTickBlock: "tick boxes",
-                        toggles: [{checked: false}, {checked: true}],
-                        ticks: [{checked: true, id: "c1"}, {checked: false, id: "c2"}]
+                +arrow-buttons({header: "arrow buttons", buttons: [
+                                {direction:"left", arrowColor:"#4EB7A8", buttonColor:"white"},
+                                {direction:"right", arrowColor:"#4EB7A8", buttonColor:"white"},
+                                {direction:"left", arrowColor:"#FFFFFF", buttonColor:"gray"},
+                                {direction:"right", arrowColor:"#FFFFFF", buttonColor:"gray"},
+                                {direction:"left", arrowColor:"#FFFFFF", buttonColor:"green"},
+                                {direction:"right", arrowColor:"#FFFFFF", buttonColor:"green"}]
+                                })
+                +percentage-pie-chart({header: "percentages / pie chart", charts: [
+                                        {type:"percentage", percent:0},
+                                        {type:"percentage", percent:38},
+                                        {type:"percentage", percent:62},
+                                        {type:"percentage", percent:89},
+                                        {type:"pie-chart", percent:[{color:"#E5E5E5", percent:33},
+                                                                {color:"#747474", percent:11},
+                                                                {color:"#4EB7A8", percent:26},
+                                                                {color:"#E75735", percent:30}]}]
+                                        })
+                +sliders({header: "sliders", sliders: [{min: 0, max: 100, step: 1, value: 40, range: "", theme: "orange"},
+                                                        {min: 0, max: 100, step: 25, value: 75, range: "min", theme: "green"}]
                         })
-        .wrap__positioner
-            +search-drop-down({header: "search / drop down",
-                                searches: [{placeholder:"Search", errorStatus:false},
-                                            {placeholder:"I've not found what I'm looking for...", errorStatus:true}],
-                                selectmenu: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}})
-            +user-profile({header: "user profile", profiles: [
-                            {photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith",
-                                profession: "ux designer", theme: "light", iconsTheme: "dark"},
-                            {photo: "images/photo-sarah-brown.png", photoPosition:"-0.444rem -0.444rem", name: "Sarah Brown",
-                                profession: "developer", theme: "green", iconsTheme: "light"}]})
-        +news-events({header: "news & events",
-                        news: {image:"images/news-photo.png", header: "It's all going downhill", date: "24 august 2013",
-                                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."},
-                        events: {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title",
-                                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                                button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}}
-                    })
-        +location({header: "location",
-                    map: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
-                            lat: 37.791079, lng: -122.415078, markerIcon: "images/icon-map-popup.png"}
-                    })
-        .wrap__positioner
-            +calendar({header: "calendar", datepicker: {prevText: "<",
-                                                        nextText: ">",
-                                                        currentText: "TODAY",
-                                                        dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ],
-                                                        dateFormat: "dd/mm/yy",
-                                                        firstDay: 1,
-                                                        altField: ".datepicker__digit",
-                                                        altFormat: "dd",
-                                                        showButtonPanel: "false"}
+                +stages({header: "stages", stages: {markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735",
+                                                colorOfInactiveStage:"#E5E5E5", textColor:"#FFFFFF", inactiveTextColor:"#888888"}
                         })
-            +messaging({header: "messaging",
-                        chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
-                                message: "Hey ! So are we cool to meet at the art gallery? Say 8pm",
-                                inputPlaceholder: "Yeah that sounds great. See you then.",
-                                button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}}
+                +form-elements({headerOfFormElementsBlock: "form elements", headerOfTogglesBlock: "toggles", headerOfTickBlock: "tick boxes",
+                                toggles: [{checked: false}, {checked: true}],
+                                ticks: [{checked: true, id: "c1"}, {checked: false, id: "c2"}]
+                                })
+                .wrap__positioner
+                        +search-drop-down({header: "search / drop down",
+                                                searches: [{placeholder:"Search", errorStatus:false},
+                                                        {placeholder:"I've not found what I'm looking for...", errorStatus:true}],
+                                                selectmenu: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}
+                                                })
+                        +user-profile({header: "user profile", profiles: [
+                                        {photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith",
+                                                profession: "ux designer", theme: "light", iconsTheme: "dark"},
+                                        {photo: "images/photo-sarah-brown.png", photoPosition:"-0.444rem -0.444rem", name: "Sarah Brown",
+                                                profession: "developer", theme: "green", iconsTheme: "light"}]
+                                        })
+                +news-events({header: "news & events",
+                                news: {image:"images/news-photo.png", header: "It's all going downhill", date: "24 august 2013",
+                                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."},
+                                events: {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title",
+                                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                        button: {text:"add to calendar", color:"green", size:"", effect:"", activeStatus:"", theme:"events"}}
+                                })
+                +location({header: "location",
+                        map: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
+                                lat: 37.791079, lng: -122.415078, markerIcon: "images/icon-map-popup.png"}
+                                })
+                .wrap__positioner
+                        +calendar({header: "calendar", datepicker: {prevText: "<",
+                                                                        nextText: ">",
+                                                                        currentText: "TODAY",
+                                                                        dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ],
+                                                                        dateFormat: "dd/mm/yy",
+                                                                        firstDay: 1,
+                                                                        altField: ".datepicker__digit",
+                                                                        altFormat: "dd",
+                                                                        showButtonPanel: "false"}
+                                        })
+                        +messaging({header: "messaging",
+                                        chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
+                                                message: "Hey ! So are we cool to meet at the art gallery? Say 8pm",
+                                                inputPlaceholder: "Yeah that sounds great. See you then.",
+                                                button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}}
+                                        })
+                +video({header: "video", frame: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}
                         })
-        +video({header: "video", frame: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}})

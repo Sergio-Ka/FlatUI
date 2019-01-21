@@ -582,11 +582,8 @@ button.ui-button::-moz-focus-inner {
 .arrow-buttons__arrow-button {
   margin: 1.1rem 0.667rem 0.667rem 0.667rem;
 }
-.calendar {
-  float: left;
-}
 .calendar__datepicker {
-  padding: 0.556rem 0 2.8rem 0;
+  padding: 0.556rem 0 2rem 0;
   width: 15.5rem;
 }
 .chat__name {
@@ -676,7 +673,8 @@ button.ui-button::-moz-focus-inner {
   padding: 0 0 0 calc(50% - 6.78rem);
 }
 .datepicker__digit {
-  width: 67%;
+  box-sizing: border-box;
+  width: 100%;
   background: #e75735;
   color: #fff;
   font-family: 'Lato', Sans-Serif;
@@ -889,14 +887,6 @@ button.ui-button::-moz-focus-inner {
     padding: 1.167rem 0.5rem 0 0;
   }
 }
-.messaging {
-  float: right;
-}
-@media only screen and (max-width: 37.5rem) {
-  .messaging {
-    float: left;
-  }
-}
 .messaging__container {
   padding-top: 0.556rem;
   max-width: 16rem;
@@ -905,9 +895,6 @@ button.ui-button::-moz-focus-inner {
   .messaging__container {
     max-width: 15rem;
   }
-}
-.news-events {
-  min-height: 16.611rem;
 }
 .news-events__news {
   width: 48.5%;
@@ -1113,9 +1100,8 @@ button.ui-button::-moz-focus-inner {
   margin: 0 0.944rem 0 1.278rem;
 }
 .search-drop-down {
-  float: left;
   width: 48.5%;
-  padding-bottom: 11.05rem;
+  padding-bottom: 10.25rem;
 }
 @media only screen and (max-width: 33.556rem) {
   .search-drop-down {
@@ -1492,9 +1478,6 @@ button.ui-button::-moz-focus-inner {
     transform: scale(40, 40);
   }
 }
-.standard-buttons {
-  margin-top: 4.5rem;
-}
 .standard-buttons__container {
   display: flex;
   flex-wrap: wrap;
@@ -1604,11 +1587,25 @@ button.ui-button::-moz-focus-inner {
   padding-top: 0.45rem;
 }
 .wrap {
-  width: 100%;
+  word-break: break-all;
+}
+.wrap__column {
   max-width: 33rem;
   min-height: 176.444rem;
-  margin: 0 auto;
-  word-break: break-all;
+}
+.wrap__column_position_center {
+  margin: 4.5rem auto 0;
+}
+.wrap__positioner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+}
+@media only screen and (max-width: 37.5rem) {
+  .wrap__positioner {
+    flex-wrap: wrap;
+  }
 }
 @font-face {
   font-family: 'Lato';
