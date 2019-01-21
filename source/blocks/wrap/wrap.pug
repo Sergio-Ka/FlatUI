@@ -47,21 +47,21 @@ mixin wrap()
                                                                 {color:"#4EB7A8", percent:26},
                                                                 {color:"#E75735", percent:30}]}]
                                         })
-                +sliders({header: "sliders", sliders: [{min: 0, max: 100, step: 1, value: 40, range: "", theme: "orange"},
+                +sliders({header: "sliders", slidersSettings: [{min: 0, max: 100, step: 1, value: 40, range: "", theme: "orange"},
                                                         {min: 0, max: 100, step: 25, value: 75, range: "min", theme: "green"}]
                         })
-                +stages({header: "stages", stages: {markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735",
+                +stages({header: "stages", stagesSettings: {markedStage:3, maxStage:5, colorOfMarkedStage:"#E75735",
                                                 colorOfInactiveStage:"#E5E5E5", textColor:"#FFFFFF", inactiveTextColor:"#888888"}
                         })
                 +form-elements({headerOfFormElementsBlock: "form elements", headerOfTogglesBlock: "toggles", headerOfTickBlock: "tick boxes",
-                                toggles: [{checked: false}, {checked: true}],
-                                ticks: [{checked: true, id: "c1"}, {checked: false, id: "c2"}]
+                                togglesSettings: [{checked: false}, {checked: true}],
+                                ticksSettings: [{checked: true, id: "c1"}, {checked: false, id: "c2"}]
                                 })
                 .wrap__positioner
                         +search-drop-down({header: "search / drop down",
-                                                searches: [{placeholder:"Search", errorStatus:false},
+                                                searchesSettings: [{placeholder:"Search", errorStatus:false},
                                                         {placeholder:"I've not found what I'm looking for...", errorStatus:true}],
-                                                selectmenu: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}
+                                                selectmenuSettings: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}
                                                 })
                         +user-profile({header: "user profile", profiles: [
                                         {photo: "images/photo-john-smith.png", photoPosition:"-1.444rem 0", name: "John Smith",
@@ -74,14 +74,14 @@ mixin wrap()
                                         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."},
                                 events: {image:"images/events-photo.png", day: "24", month: "Aug", title: "this is the title",
                                         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                                        button: {text:"add to calendar", color:"green", size:"small", effect:"", activeStatus:"inactive"}}
+                                        buttonSettings: {text:"add to calendar", color:"green", size:"small", effect:"", activeStatus:"inactive"}}
                                 })
                 +location({header: "location",
-                        map: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
-                                lat: 37.791079, lng: -122.415078, markerIcon: "images/icon-map-popup.png"}
+                        mapSettings: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca",
+                                latitude: 37.791079, longitude: -122.415078, markerIcon: "images/icon-map-popup.png"}
                                 })
                 .wrap__positioner
-                        +calendar({header: "calendar", datepicker: {prevText: "<",
+                        +calendar({header: "calendar", datepickerSettings: {prevText: "<",
                                                                         nextText: ">",
                                                                         currentText: "TODAY",
                                                                         dayNamesMin: [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ],
@@ -92,10 +92,10 @@ mixin wrap()
                                                                         showButtonPanel: "false"}
                                         })
                         +messaging({header: "messaging",
-                                        chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
+                                        chatSettings: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png",
                                                 message: "Hey ! So are we cool to meet at the art gallery? Say 8pm",
                                                 inputPlaceholder: "Yeah that sounds great. See you then.",
-                                                button: {text:"reply", color:"green", size:"", effect:"", activeStatus:""}}
+                                                buttonSettings: {text:"reply", color:"green", size:"", effect:"", activeStatus:""}}
                                         })
-                +video({header: "video", frame: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}
+                +video({header: "video", frameSettings: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}
                         })

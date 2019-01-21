@@ -1,9 +1,9 @@
 include ../header-of-block/header-of-block.pug
 include ../chat/chat.pug
 
-mixin messaging(options = {header: "messaging", chat: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png", message: "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder: "Yeah that sounds great. See you then.", button: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}}})
-    -let {header = "messaging", chat = {}} = options;
+mixin messaging(options = {header: "messaging", chatSettings: {name: "Sarah Brown", photo: "images/photo-sarah-brown.png", message: "Hey ! So are we cool to meet at the art gallery? Say 8pm", inputPlaceholder: "Yeah that sounds great. See you then.", buttonSettings: {text:"reply", color:"green", size:"", effect:"", activeStatus:"", theme:"chat"}}})
+    -let {header = "messaging", chatSettings = {}} = options;
     section.messaging
         +header-of-block(header)
         .messaging__container
-            +chat(chat)
+            +chat(chatSettings)

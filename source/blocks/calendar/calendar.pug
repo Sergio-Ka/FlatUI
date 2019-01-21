@@ -1,9 +1,9 @@
 include ../header-of-block/header-of-block.pug
 include ../datepicker/datepicker.pug
 
-mixin calendar( options = {header: "calendar", datepicker: {}})
-    -let {header = "calendar", datepicker = {}} = options;
+mixin calendar( options = {header: "calendar", datepickerSettings: {}})
+    -let {header = "calendar", datepickerSettings = {}} = options;
     section.calendar
         +header-of-block(header)
         .calendar__datepicker
-            +datepicker(datepicker)
+            +datepicker(datepickerSettings)

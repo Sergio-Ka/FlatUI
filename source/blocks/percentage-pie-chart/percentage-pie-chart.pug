@@ -2,11 +2,11 @@ include ../header-of-block/header-of-block.pug
 include ../percentage/percentage.pug
 include ../pie-chart/pie-chart.pug
 
-mixin percentage-pie-chart(options = {header: "percentages / pie chart", charts: [{type:"percentage", percent:0}]})
-    -let {header = "percentages / pie chart", charts = [{type:"percentage", percent:0}]} = options;
+mixin percentage-pie-chart(options = {header: "percentages / pie chart", chartsSettings: [{type:"percentage", percent:0}]})
+    -let {header = "percentages / pie chart", chartsSettings = [{type:"percentage", percent:0}]} = options;
     section.percentage-pie-chart
         +header-of-block(header)
-        -charts.forEach(function(item, i, arr) {
+        -chartsSettings.forEach(function(item, i, arr) {
             -if (item.type == "percentage") {
                 .percentage-pie-chart__graphics
                     +percentage(item.percent)

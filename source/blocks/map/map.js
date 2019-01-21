@@ -6,7 +6,7 @@ class Map {
   }
 
   initMap() {
-    const mapCoordinate = {lat: this.$element.data('lat'), lng: this.$element.data('lng')};
+    const mapCoordinate = {lat: this.$element.data('latitude'), lng: this.$element.data('longitude')};
     const mapFrame = this.$element.find('.js-map__frame');
     const mapOptions = {zoom: 13, center: mapCoordinate, mapTypeControl: false, zoomControl: false, streetViewControl: false};
 

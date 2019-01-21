@@ -1,9 +1,9 @@
 include ../header-of-block/header-of-block.pug
 include ../video-frame/video-frame.pug
 
-mixin video(options = {header: "video", frame: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}})
-    -let {header = "video", frame = {}} = options;
+mixin video(options = {header: "video", frameSettings: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}})
+    -let {header = "video", frameSettings = {}} = options;
     section.video
         +header-of-block(header)
         .video__content
-            +video-frame(frame)
+            +video-frame(frameSettings)

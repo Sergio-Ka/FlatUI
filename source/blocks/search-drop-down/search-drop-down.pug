@@ -2,13 +2,13 @@ include ../header-of-block/header-of-block.pug
 include ../search-form/search-form.pug
 include ../selectmenu/selectmenu.pug
 
-mixin search-drop-down(options = {header: "search / drop down", searches: [{placeholder:"Search", errorStatus:false}, {placeholder:"I've not found what I'm looking for...", errorStatus:true}], selectmenu: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}})
-    -let {header = "search / drop down", searches = [], selectmenu = {}} = options;
+mixin search-drop-down(options = {header: "search / drop down", searchesSettings: [{placeholder:"Search", errorStatus:false}, {placeholder:"I've not found what I'm looking for...", errorStatus:true}], selectmenuSettings: {selectedItem: 1, items:["Choose An Option","Option 1","Option 2","Option 3","Option 4"]}})
+    -let {header = "search / drop down", searchesSettings = [], selectmenuSettings = {}} = options;
     section.search-drop-down
         +header-of-block(header)
         .search-drop-down__search-success
-            +search-form(searches[0])
+            +search-form(searchesSettings[0])
         .search-drop-down__search-unsuccess
-            +search-form(searches[1])
+            +search-form(searchesSettings[1])
         form.search-drop-down__selectmenu-form
-            +selectmenu(selectmenu)
+            +selectmenu(selectmenuSettings)
