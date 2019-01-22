@@ -904,8 +904,8 @@ button.ui-button::-moz-focus-inner {
 }
 @media only screen and (max-width: 33.556rem) {
   .news-events__news {
-    min-width: 15.278rem;
-    margin: 1rem;
+    width: 100%;
+    margin: 0.25rem;
   }
 }
 .news-events__events {
@@ -916,8 +916,9 @@ button.ui-button::-moz-focus-inner {
 @media only screen and (max-width: 33.556rem) {
   .news-events__events {
     float: left;
-    min-width: 15.278rem;
-    margin: 1rem;
+    width: 100%;
+    margin: 0.25rem;
+    box-sizing: border-box;
   }
 }
 .news {
@@ -964,6 +965,11 @@ button.ui-button::-moz-focus-inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 33.556rem) {
+  .percentage-pie-chart__content {
+    justify-content: space-around;
+  }
 }
 .percentage-pie-chart__graphics {
   margin: 0.5rem 0 0 0;
@@ -1074,10 +1080,11 @@ button.ui-button::-moz-focus-inner {
   width: 48.5%;
   padding-bottom: 10.25rem;
 }
-@media only screen and (max-width: 33.556rem) {
+@media only screen and (max-width: 37.556rem) {
   .search-drop-down {
-    width: 95%;
-    padding-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
   }
 }
 .search-drop-down__search-success {
@@ -1509,7 +1516,6 @@ button.ui-button::-moz-focus-inner {
 .user-profile {
   display: flex;
   flex-direction: column;
-  min-width: 14.889rem;
 }
 .user-profile__block:nth-child(2),
 .user-profile__block:nth-child(3) {
@@ -1518,13 +1524,18 @@ button.ui-button::-moz-focus-inner {
 @media only screen and (max-width: 33.556rem) {
   .user-profile__block:nth-child(2),
   .user-profile__block:nth-child(3) {
-    margin: 1rem auto;
+    margin: 0.5rem;
   }
 }
 .video-frame {
   width: 100%;
   min-height: 18.8rem;
   border: 0;
+}
+@media only screen and (max-width: 33rem) {
+  .video-frame {
+    min-height: 0;
+  }
 }
 .video__content {
   padding-top: 0.45rem;
@@ -1548,6 +1559,7 @@ button.ui-button::-moz-focus-inner {
 @media only screen and (max-width: 37.5rem) {
   .wrap__positioner {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @font-face {
