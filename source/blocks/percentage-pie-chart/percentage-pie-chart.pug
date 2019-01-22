@@ -6,13 +6,14 @@ mixin percentage-pie-chart(options = {header: "percentages / pie chart", chartsS
     -let {header = "percentages / pie chart", chartsSettings = [{type:"percentage", percent:0}]} = options;
     section.percentage-pie-chart
         +header-of-block(header)
-        -chartsSettings.forEach(function(item, i, arr) {
-            -if (item.type == "percentage") {
-                .percentage-pie-chart__graphics
-                    +percentage(item.percent)
-            -} else if (item.type == "pie-chart") {
-                .percentage-pie-chart__graphics
-                    +pie-chart(item.percent)
-            -}
-        -});
+        .percentage-pie-chart__content
+            -chartsSettings.forEach(function(item, i, arr) {
+                -if (item.type == "percentage") {
+                    .percentage-pie-chart__graphics
+                        +percentage(item.percent)
+                -} else if (item.type == "pie-chart") {
+                    .percentage-pie-chart__graphics
+                        +pie-chart(item.percent)
+                -}
+            -});
         

@@ -1,35 +1,13 @@
 .percentage-pie-chart
   min-height 8.944rem
 
+  &__content
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+
   &__graphics
-    float left
+    margin 0.5rem 0 0 0
 
-    &:nth-child(2)
-      margin 0.389rem 0.444rem 0 0
-      
-      @media only screen and (max-width 33.556rem)
-        margin 1.111rem
-
-    &:nth-child(3)
-      margin 0.556rem 2.056rem 0 0
-      
-      @media only screen and (max-width 33.556rem)
-        margin 1.111rem
-
-    &:nth-child(4)
-      margin 0.556rem 1.889rem 0 0
-      
-      @media only screen and (max-width 33.556rem)
-        margin 1.111rem
-
-    &:nth-child(5)
-      margin 0.556rem 1.667rem 0 0
-      
-      @media only screen and (max-width 33.556rem)
-        margin 1.111rem
-
-    &:last-child
-      margin 0.556rem 0 0 0
-      
-      @media only screen and (max-width 33.556rem)
-        margin 1.111rem
+    @media only screen and (max-width 33.556rem)
+        margin 0.5rem
