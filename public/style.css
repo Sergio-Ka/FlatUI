@@ -1238,32 +1238,18 @@ button.ui-button::-moz-focus-inner {
   background: #4eb7a8 !important;
 }
 .slider-discrete__scale {
+  width: calc(100% + 0.2rem);
   min-width: 14.444rem;
-  padding-top: 0.167rem;
+  padding-top: 0.5rem;
   word-break: keep-all;
+  display: flex;
+  justify-content: space-between;
 }
-.slider-discrete__digit-zero {
-  display: inline-block;
+.slider-discrete__digit {
+  width: 1rem;
   font-size: 0.6rem;
   font-weight: bold;
   color: #9d9d9d;
-  width: 23%;
-}
-.slider-discrete__digit-quarter,
-.slider-discrete__digit-half,
-.slider-discrete__digit-three-quarter {
-  display: inline-block;
-  font-size: 0.6rem;
-  font-weight: bold;
-  color: #9d9d9d;
-  width: 24%;
-}
-.slider-discrete__digit-full {
-  display: inline-block;
-  font-size: 0.6rem;
-  font-weight: bold;
-  color: #9d9d9d;
-  width: 4%;
 }
 .slider-with-pop-up__handle_theme_orange,
 .slider-with-pop-up__range-min_theme_orange {
