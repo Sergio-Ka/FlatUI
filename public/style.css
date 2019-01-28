@@ -1313,25 +1313,23 @@ button.ui-button::-moz-focus-inner {
   font-weight: bold;
   text-transform: uppercase;
 }
-.standard-button_inactive-green {
-  color: #4eb7a8;
-  background: #fff;
-  border: 0.056rem solid #4eb7a8;
-  border-bottom: 0.222rem solid #28a290;
-}
-.standard-button_inactive-red {
-  color: #e75735;
-  background: #fff;
-  border: 0.056rem solid #e75735;
-  border-bottom: 0.222rem solid #e75735;
-}
 .standard-button_color_green {
   background: #4eb7a8;
+  border: 0.056rem solid #4eb7a8;
   border-bottom: 0.222rem solid #28a290;
 }
 .standard-button_color_red {
   background: #e75735;
+  border: 0.056rem solid #e75735;
   border-bottom: 0.222rem solid #bf3f1f;
+}
+.standard-button_inactive-green {
+  color: #4eb7a8;
+  background: #fff;
+}
+.standard-button_inactive-red {
+  color: #e75735;
+  background: #fff;
 }
 .standard-button_size_small {
   min-width: 4.333rem;
