@@ -3,6 +3,6 @@ mixin news(options = {image:"images/news-photo.png", header: "It's all going dow
     .news
         .news__image(style=`background-image: url(${image});`)
         .news__content
-            h2.news__header= header
-            h2.news__date= date
+            h3.news__header= header
+            .news__date= date
             p.news__text= text

@@ -5,9 +5,9 @@ mixin events(options = {image:"images/events-photo.png", day: "24", month: "Aug"
     .events
         .events__image(style=`background-image: url(${image});`)
         form.events__content
-            h2.events__day= day
-            h2.events__month= month
-            h2.events__title= title
+            .events__day= day
+            .events__month= month
+            h3.events__title= title
             p.events__text= text
             .events__button
                 +standard-button(buttonSettings)

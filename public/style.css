@@ -747,7 +747,7 @@ button.ui-button::-moz-focus-inner {
   font-weight: bold;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
-  margin: 0.167rem 0 0 0.222rem;
+  margin: 1.2rem 0 0 0.222rem;
 }
 .events__text {
   letter-spacing: 0.025rem;
@@ -755,7 +755,7 @@ button.ui-button::-moz-focus-inner {
 }
 .events__button {
   height: 1.5rem;
-  margin: 1rem 0.8rem 0 0.8rem;
+  margin: 0.95rem 0.8rem 0 0.8rem;
 }
 .form-elements__container {
   display: flex;
@@ -1058,6 +1058,7 @@ button.ui-button::-moz-focus-inner {
 .profile__profession {
   display: block;
   font-size: 0.6rem;
+  font-weight: bold;
   letter-spacing: 0.04rem;
   text-align: center;
   text-transform: uppercase;
