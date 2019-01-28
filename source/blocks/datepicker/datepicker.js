@@ -1,7 +1,7 @@
 class Datepick {
     
-  constructor(element) {
-    this.$element = element;
+  constructor($element) {
+    this.$element = $element;
     this.initDatepicker(this.$element);
   }
 
@@ -16,11 +16,11 @@ class Datepick {
       showButtonPanel: this.$element.data('showpanel'),}
   }
 
-  initDatepicker(calendar) {
-    calendar.datepicker(this.getDatepickerSettings());
-    const button = $('.js-datepicker__button');
-    button.on('click', function callback(event) {
-      calendar.datepicker('setDate', new Date());
+  initDatepicker($calendar) {
+    $calendar.datepicker(this.getDatepickerSettings());
+    const $button = $('.js-datepicker__button');
+    $button.on('click', function callback(event) {
+      $calendar.datepicker('setDate', new Date());
     });
   }
 }

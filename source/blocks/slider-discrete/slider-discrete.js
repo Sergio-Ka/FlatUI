@@ -1,7 +1,7 @@
 class SliderDescrete {
 
-  constructor(element) {
-    this.$element = element;
+  constructor($element) {
+    this.$element = $element;
     this.initSlider();
   }
 
@@ -16,12 +16,12 @@ class SliderDescrete {
   initSlider() {
     this.$element.slider(this.getSliderSettings());
 
-    const sliderTheme = this.$element.data('theme');
-    const sliderHandle = this.$element.find('.ui-slider-handle');
-    const sliderMinRange = this.$element.find('.ui-slider-range-min');
+    const $sliderTheme = this.$element.data('theme');
+    const $sliderHandle = this.$element.find('.ui-slider-handle');
+    const $sliderMinRange = this.$element.find('.ui-slider-range-min');
 
-    sliderHandle.addClass(`slider-discrete__handle_theme_${sliderTheme}`);
-    sliderMinRange.addClass(`slider-discrete__range-min_theme_${sliderTheme}`);
+    $sliderHandle.addClass(`slider-discrete__handle_theme_${$sliderTheme}`);
+    $sliderMinRange.addClass(`slider-discrete__range-min_theme_${$sliderTheme}`);
   }
 }
 

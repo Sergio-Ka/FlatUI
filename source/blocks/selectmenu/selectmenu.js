@@ -1,7 +1,7 @@
 class Selectmenu {
     
-  constructor(element) {
-    this.$element = element;
+  constructor($element) {
+    this.$element = $element;
     this.initSelectmenu();
   }
 
