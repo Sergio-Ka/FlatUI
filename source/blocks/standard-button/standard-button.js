@@ -7,7 +7,7 @@ class StandardButton {
 
   initButton() {
     this.$element.on('click', function callback(event) {
-      event.preventDefault();
+      //event.preventDefault();
       const targetCoordinates = event.target.getBoundingClientRect();
       const xCoordinate = event.clientX - targetCoordinates.left;
       const yCoordinate = event.clientY - targetCoordinates.top;

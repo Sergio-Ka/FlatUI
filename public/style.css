@@ -671,7 +671,7 @@ button.ui-button::-moz-focus-inner {
 }
 .chat__button {
   margin: 0.833rem 0;
-  padding: 0 0 0 calc(50% - 6.78rem);
+  padding: 0 0 0 0;
 }
 .datepicker__digit {
   box-sizing: border-box;
