@@ -6,7 +6,7 @@ mixin standard-buttons(options = {header: "standard buttons", buttons: [{text:"b
     section.standard-buttons
         +header-of-block(header)
         form.standard-buttons__container
-            -buttons.forEach(function (item, i, arr) {
+            -buttons.forEach((item) => {
                 .standard-buttons__standard-button
                     +standard-button({text:item.text, color:item.color, size:item.size, effect:item.effect, activeStatus:item.activeStatus, theme:item.theme})
             -});

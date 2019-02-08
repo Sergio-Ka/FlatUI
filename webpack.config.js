@@ -16,7 +16,7 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('style.css'),
-    new HtmlWebpackPlugin({template: 'source/index.pug'}),
+    new HtmlWebpackPlugin({ template: 'source/index.pug' }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
@@ -55,7 +55,7 @@ module.exports = {
   devServer: {
     host: "localhost",
     port: "8080",
-    contentBase:  __dirname + '/public'
+    contentBase: __dirname + '/public'
   }
 
 };

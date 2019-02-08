@@ -7,7 +7,7 @@ mixin percentage-pie-chart(options = {header: "percentages / pie chart", chartsS
     section.percentage-pie-chart
         +header-of-block(header)
         .percentage-pie-chart__content
-            -chartsSettings.forEach(function(item, i, arr) {
+            -chartsSettings.forEach((item) => {
                 -if (item.type == "percentage") {
                     .percentage-pie-chart__graphics
                         +percentage(item.percent)

@@ -13,13 +13,13 @@ mixin form-elements(options = {headerOfFormElementsBlock: "form elements", heade
             form.form-elements__toggles-tick-boxes
                 +header-of-block(headerOfTogglesBlock)
                 .form-elements__toggles
-                    -togglesSettings.forEach(function (item, i, arr) {
+                    -togglesSettings.forEach((item) => {
                         .form-elements__switch
                             +toggle-switch({checked: item.checked})
                     -})
                 +header-of-block(headerOfTickBlock)
                 .form-elements__tick-boxes
-                    -ticksSettings.forEach(function (item, i, arr) {
+                    -ticksSettings.forEach((item) => {
                         .form-elements__tick-box
                             +tick-box({checked: item.checked, id: item.id})
                     -})

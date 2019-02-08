@@ -5,7 +5,7 @@ mixin user-profile(options = {header: "user profile", profiles: [{photo: "images
     -let {header = "user profile", profiles = []} = options;
     section.user-profile
         +header-of-block(header)
-        -profiles.forEach(function(item, i, arr) {
+        -profiles.forEach((item) => {
             .user-profile__block
                 +profile({photo: item.photo, photoPosition: item.photoPosition,  name: item.name, profession: item.profession, theme: item.theme, iconsTheme: item.iconsTheme})
         -});
