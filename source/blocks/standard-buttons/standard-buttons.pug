@@ -1,0 +1,12 @@
+include ../header-of-block/header-of-block.pug
+include ../standard-button/standard-button.pug
+
+mixin standard-buttons(options = {header: "standard buttons", buttons: [{text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""}]})
+    -let {header = "standard buttons", buttons = [{text:"button", color:"green", size:"small", effect:"ripple", activeStatus:"", theme:""}]} = options;
+    section.standard-buttons
+        +header-of-block(header)
+        .standard-buttons__container
+            -buttons.forEach((item) => {
+                .standard-buttons__standard-button
+                    +standard-button({text:item.text, color:item.color, size:item.size, effect:item.effect, activeStatus:item.activeStatus, theme:item.theme})
+            -});

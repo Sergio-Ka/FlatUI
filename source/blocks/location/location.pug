@@ -1,12 +1,9 @@
-div(class="location")
-	+header-of-block("LOCATION")
-	div(class="map")
-		iframe(class="map__frame", src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.379727947122!2d-122.4220465!3d37.7936737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858092e7ee4833%3A0xba9adf323eff9155!2s1259+California+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2sru!4v1513867048557", allowfullscreen)
-		div(class="map__legend")
-			div(class="map__invite") Meet us!
-			div(class="map__adress") 1259 CALIFORNIA ST
-				br/ SAN FRANCISCO, CA 
-			div(class="map__icon")
-				img(src="public/images/icon-2.png")
-			div(class="map__icon map__icon_first")
-				img(src="public/images/icon-1.png")
+include ../header-of-block/header-of-block.pug
+include ../map/map.pug
+
+mixin location(options = {header: "location", mapSettings: {invite: "Meet us!", localAdress: "1259 california st", globalAdress: "san francisco, ca", link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.379727947122!2d-122.4220465!3d37.7936737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858092e7ee4833%3A0xba9adf323eff9155!2s1259+California+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2sru!4v1513867048557"}})
+    -let {header = "location", mapSettings = {}} = options;
+    section.location
+        +header-of-block(header)
+        .location__content
+            +map(mapSettings)

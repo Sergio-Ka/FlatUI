@@ -1,3 +1,9 @@
-div(class="video")
-    +header-of-block("VIDEO")
-    iframe(class="video-frame", src="https://player.vimeo.com/video/62980495?color=e75735&portrait=0", allowfullscreen)
+include ../header-of-block/header-of-block.pug
+include ../video-frame/video-frame.pug
+
+mixin video(options = {header: "video", frameSettings: {link:"https://player.vimeo.com/video/62980495", color: "E75735"}})
+    -let {header = "video", frameSettings = {}} = options;
+    section.video
+        +header-of-block(header)
+        .video__content
+            +video-frame(frameSettings)

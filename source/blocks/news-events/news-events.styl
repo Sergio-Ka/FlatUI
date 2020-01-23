@@ -1,24 +1,22 @@
 .news-events
-	min-height 302px
 
-.news-events__news
-	width 48.5%
-	margin-top 21px
-	float left
+  &__news
+    width 48.5%
+    margin 1rem 0 2.65rem 0
+    float left
 
-.news-events__events
-	width 48.4%
-	margin-top 21px
-	float right
+    @media only screen and (max-width 33.556rem)
+      width 100%
+      margin 0.25rem
+
+  &__events
+    width 48.4%
+    margin 1rem 0 2.65rem 0
+    float right
+
+    @media only screen and (max-width 33.556rem)
+      float left
+      width 100%
+      margin 0.25rem
+      box-sizing border-box
     
-@import 'news/news.styl'
-@import 'events/events.styl'
-
-@media only screen and (max-width 604px)
-	.news-events__events
-		float left
-		min-width 275px
-		margin-bottom 20px
-
-	.news-events__news
-		min-width 275px

@@ -1,12 +1,9 @@
-import './index.styl';
-import './blocks/location/map/images/icon-1.png';
-import './blocks/location/map/images/icon-2.png';
-import './blocks/user-profile/profile/images/FB.png';
-import './blocks/user-profile/profile/images/FB_white.png';
-import './blocks/user-profile/profile/images/TW.png';
-import './blocks/user-profile/profile/images/TW_white.png';
-import './blocks/user-profile/profile/images/DR.png';
-import './blocks/user-profile/profile/images/DR_white.png';
-require('./blocks/sliders/sliders.js');
-require('./blocks/search-drop-down/search-drop-down.js');
-require('./blocks/calendar/calendar.js');
+require('webpack-jquery-ui/datepicker');
+require('webpack-jquery-ui/selectmenu');
+require('webpack-jquery-ui/slider');
+
+const requireAllFiles = (requireContext) => {
+  return requireContext.keys().map(requireContext);
+};
+
+requireAllFiles(require.context('./', true, /^\.\/.*\.(js|styl|css|png|jpg)$/));

@@ -1,14 +1,8 @@
 .messaging
-    position relative
-    float right
-    min-width 288px
 
-.messaging__container
-    padding-top 12px
+  &__container
+    padding-top 0.556rem
+    max-width 16rem
 
-@import 'chat/chat.styl'
-
-@media only screen and (max-width 604px)
-	.messaging
-		float left
-		min-width 275px
+    @media only screen and (max-width 37.5rem)
+      max-width 15rem

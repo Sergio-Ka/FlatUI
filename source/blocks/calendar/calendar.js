@@ -1,1 +1,0 @@
-require('./datepicker/datepicker.js');
